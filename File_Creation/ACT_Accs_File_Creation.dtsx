@@ -1,0 +1,2385 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/20/2020 12:59:17 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-0FGSJI4"
+  DTS:CreatorName="UVIEW\kshelton"
+  DTS:DTSID="{E5947F0D-802F-479F-A21F-AE8A6085506C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.71"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{224F4CDD-D07B-4E47-BA1E-DCDA6918156C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DateFile.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EDF2A960-31FB-456F-B885-7F2BAEFBDE79}"
+      DTS:ObjectName="DateFile.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Temp\File_Creation\ACT_Accs\DataFile.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LASID"
+              DTS:DTSID="{048B6C17-5DBF-460B-803E-F17F6AE43D46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StudentFirstName"
+              DTS:DTSID="{15019470-90F0-4970-B891-2F3D05B058E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StudentLastName"
+              DTS:DTSID="{123A831C-3C82-4C29-B93F-9882A7B796EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestAddress"
+              DTS:DTSID="{C22B4C47-9AD0-4301-9D39-AFB833FB92E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestCity"
+              DTS:DTSID="{5C9766DC-5F38-4D44-9351-06AFE4F0EB55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestDate1"
+              DTS:DTSID="{347F6D4D-3713-48D5-BB34-C33D3A3D9BD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestDate2"
+              DTS:DTSID="{AEDEF73D-32FC-408A-8095-574296AE9DF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestDate3"
+              DTS:DTSID="{40D105BD-9731-482E-8023-4B64602E1948}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestDate4"
+              DTS:DTSID="{F40D6964-87BF-4478-8FE1-ED50A13FFBE5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestTime"
+              DTS:DTSID="{FECCE2FB-7A43-4DBE-A635-4418E01FFA0D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[map.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3216B693-E537-4315-BDF6-3219DBEEF401}"
+      DTS:ObjectName="map.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Temp\File_Creation\ACT_Accs\map.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stIndex"
+              DTS:DTSID="{04967138-ACC3-4C8A-BC6E-4FFD807E76BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="studentfilename"
+              DTS:DTSID="{CB12BA19-9383-489A-8266-443B24D71B18}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{266C7DA1-9F4F-45B1-B45E-6B005CA04397}"
+      DTS:ObjectName="uvasql.UNIVERSITYVIEW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=uvasql;Initial Catalog=UNIVERSITYVIEW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{330B7217-059F-4769-8155-4ED771774661}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="LASID">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{28892DC6-8B99-4B82-8645-8067DC34031B}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="QueryResult">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{121AC16D-DB81-4D38-9FD2-190655888DDB}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="StudentFileName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1831B8C1-B1C6-4B12-9769-4C7F70D1C655}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="StudentFirstName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AF0E5897-2F41-4F1D-BAC7-80E43F5C8FA2}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="StudentLastName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CA9C3C3A-42CB-4700-8342-BFBFF2D13D68}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestAddress">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{85495ED1-83B5-46E1-972B-B7B7A9825709}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestCity">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{93F97741-C5CE-4E8F-8326-FE66BF42CED3}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestDate1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{296EA8B2-30D5-44EA-9430-E8F5548E0B4B}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestDate2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A4B2B9EA-66CD-442B-9738-F3FBE20F0C81}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestDate3">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D65F5E33-2B78-47A4-8498-1ABA016BEA51}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestDate4">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7E35E493-B8AD-46C1-B301-C7CE82D1073F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{32AC0A9A-99CC-48FD-91E9-7BA26C1A7446}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestTime">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create Map File"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{0837AA7A-5A0C-499B-AA32-BF5E412863A1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Map File"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Create Map File\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Create Map File\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[map.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[map.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].Columns[stIndex]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="9"
+                      cachedName="stIndex"
+                      externalMetadataColumnId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[stIndex]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stIndex]" />
+                    <inputColumn
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].Columns[studentfilename]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="studentfilename"
+                      externalMetadataColumnId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[studentfilename]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[studentfilename]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[stIndex]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="stIndex" />
+                    <externalMetadataColumn
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[studentfilename]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="studentfilename" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Create Map File\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select 
+	st.stIndex
+                  ,concat('ACT Testing 2020 - ',st.stIndex,'.pdf') as studentfilename
+from generalFileCreation g
+inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Create Map File\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
+                  connectionManagerRefId="Package.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stIndex]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stIndex]"
+                      length="9"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stIndex]"
+                      name="stIndex"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[studentfilename]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[studentfilename]"
+                      length="50"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[studentfilename]"
+                      name="studentfilename"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stIndex]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="stIndex" />
+                    <externalMetadataColumn
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[studentfilename]"
+                      codePage="1252"
+                      dataType="str"
+                      length="32"
+                      name="studentfilename" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[stIndex]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[stIndex]"
+                      name="stIndex" />
+                    <outputColumn
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[studentfilename]"
+                      codePage="1252"
+                      dataType="str"
+                      length="32"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[studentfilename]"
+                      name="studentfilename" />
+                    <outputColumn
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Create Map File.Paths[OLE DB Source Output]"
+              endId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Student Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{053CC6CA-A046-4825-9146-2B974B368983}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Student Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachADOEnumerator"
+        DTS:DTSID="{F07A1812-3105-469E-8A9E-11CD863D9390}"
+        DTS:ObjectName="{DF13062F-8CEA-485B-A557-CD5619680CFC}">
+        <DTS:ObjectData>
+          <FEEADO
+            EnumType="EnumerateRowsInFirstTable"
+            VarName="User::QueryResult" />
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Student Container\Script Task"
+          DTS:CreationName="Microsoft.ScriptTask"
+          DTS:Description="Script Task"
+          DTS:DTSID="{BEE80A5B-9425-4A2A-93A0-239FB6A1DB96}"
+          DTS:ExecutableType="Microsoft.ScriptTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Script Task"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ScriptProject
+              Name="ST_5eecb56f9e1d4c5fa745f0cb1a013c2e"
+              VSTAMajorVersion="15"
+              VSTAMinorVersion="0"
+              Language="CSharp"
+              ReadOnlyVariables="User::StudentFileName,User::StudentFirstName,User::StudentLastName,User::TestAddress,User::TestDate1,User::TestDate2,User::TestDate3,User::TestDate4,User::TestTime">
+              <ProjectItem
+                Name="Properties\Resources.resx"
+                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8c4c03eac64347229462ca52238cc36e.Properties.Settings.get_Default():ST_8c4c03eac64347229462ca52238cc36e.Properties.Sett" +
+    "ings")]
+
+namespace ST_8c4c03eac64347229462ca52238cc36e.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="ScriptMain.cs"
+                Encoding="UTF8"><![CDATA[#region Namespaces
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.SqlClient;
+using Microsoft.Office.Interop;
+using Microsoft.Office.Interop.Word;
+using Microsoft;
+using System.Data;
+using Microsoft.SqlServer.Dts.Runtime;
+using Microsoft.SqlServer.Dts.Tasks.ScriptTask;
+using System.Windows.Forms;
+using DataTable = System.Data.DataTable;
+#endregion
+//File creation for student testing locations
+namespace ST_8c4c03eac64347229462ca52238cc36e
+{
+    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+    {
+        public void Main()
+        {
+              
+            string studentFileName = (string)Dts.Variables["User::StudentFileName"].Value;
+            string studentFirstName = (string)Dts.Variables["User::StudentFirstName"].Value;
+            string studentLastName = (string)Dts.Variables["User::StudentLastName"].Value;
+            string TestAddress = (string)Dts.Variables["User::TestAddress"].Value;
+            string TestTime = (string)Dts.Variables["User::TestTime"].Value;
+            string TestDate1 = (string)Dts.Variables["User::TestDate1"].Value;
+            string TestDate2 = (string)Dts.Variables["User::TestDate2"].Value;
+            string TestDate3 = (string)Dts.Variables["User::TestDate3"].Value;
+            string TestDate4 = (string)Dts.Variables["User::TestDate4"].Value;
+
+
+            DateTime currentDate = DateTime.Today;
+            string root = "C:\\Temp\\File_Creation\\ACT_Accs\\";
+            string dateString = currentDate.ToString("MM-dd-yy");
+
+            System.IO.Directory.CreateDirectory(root+dateString);
+
+            //Load Microsoft Document
+            Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application { Visible = false };
+            object templateFileName = "C:\\Temp\\File_Creation\\ACT_Accs\\LetterTemplate.docx";
+
+
+            //Replace info in document
+            Document aDoc = wordApp.Documents.Open(templateFileName, ReadOnly: false, Visible: false);
+            
+            aDoc.Activate();
+
+            wordApp.Selection.Find.ClearFormatting();
+            FindAndReplace(wordApp, "{StudentFirstName}", studentFirstName);
+
+            wordApp.Selection.Find.ClearFormatting();
+            FindAndReplace(wordApp, "{StudentLastName}", studentLastName);
+
+            wordApp.Selection.Find.ClearFormatting();
+            FindAndReplace(wordApp, "{TestAddress}", TestAddress);
+
+            wordApp.Selection.Find.ClearFormatting();
+            FindAndReplace(wordApp, "{TestTime}", TestTime);
+
+            wordApp.Selection.Find.ClearFormatting();
+            FindAndReplace(wordApp, "{TestDate1}", TestDate1);
+
+            wordApp.Selection.Find.ClearFormatting();
+            FindAndReplace(wordApp, "{TestDate2}", TestDate2);
+
+            wordApp.Selection.Find.ClearFormatting();
+            FindAndReplace(wordApp, "{TestDate3}", TestDate3);
+
+            wordApp.Selection.Find.ClearFormatting();
+            FindAndReplace(wordApp, "{TestDate4}", TestDate4);
+
+            //wordApp.Selection.Find.ClearFormatting();
+            //FindAndReplace(wordApp, "{CurrentDate}", currentDate);
+
+            //wordApp.Selection.Find.ClearFormatting();
+            //FindAndReplace(wordApp, "{ApprovedAccomodations}", ApprovedAccomodations);
+
+            //Save Document
+            aDoc.SaveAs2("C:\\Temp\\File_Creation\\ACT_Accs\\" + dateString+"\\" + studentFileName, WdSaveFormat.wdFormatPDF);
+            aDoc.Close(WdSaveOptions.wdDoNotSaveChanges);
+            wordApp.Quit(WdSaveOptions.wdDoNotSaveChanges);
+
+            Dts.TaskResult = (int)ScriptResults.Success;
+        }
+        static void FindAndReplace(Microsoft.Office.Interop.Word.Application doc, object findText, object replaceWithText)
+        {
+            //options
+            object matchCase = false;
+            object matchWholeWord = true;
+            object matchWildCards = false;
+            object matchSoundsLike = false;
+            object matchAllWordForms = false;
+            object forward = true;
+            object format = false;
+            object matchKashida = false;
+            object matchDiacritics = false;
+            object matchAlefHamza = false;
+            object matchControl = false;
+            object read_only = false;
+            object visible = true;
+            object replace = 2;
+            object wrap = 1;
+            //execute find and replace
+            doc.Selection.Find.Execute(ref findText, ref matchCase, ref matchWholeWord,
+                ref matchWildCards, ref matchSoundsLike, ref matchAllWordForms, ref forward, ref wrap, ref format, ref replaceWithText, ref replace,
+                ref matchKashida, ref matchDiacritics, ref matchAlefHamza, ref matchControl);
+        }
+    }
+    #region ScriptResults declaration
+    /// <summary>
+    /// This enum provides a convenient shorthand within the scope of this class for setting the
+    /// result of the script.
+    /// 
+    /// This code was generated automatically.
+    /// </summary>
+    enum ScriptResults
+    {
+        Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+        Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+    };
+    #endregion
+}]]></ProjectItem>
+              <ProjectItem
+                Name="ST_5eecb56f9e1d4c5fa745f0cb1a013c2e.csproj"
+                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CA18533-CCC3-48AB-9990-4D81D58DFE9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_8c4c03eac64347229462ca52238cc36e</RootNamespace>
+    <AssemblyName>ST_5eecb56f9e1d4c5fa745f0cb1a013c2e</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_5eecb56f9e1d4c5fa745f0cb1a013c2e</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_5eecb56f9e1d4c5fa745f0cb1a013c2e</msb:DisplayName>
+    <msb:ProjectId>{C463F0B9-9447-4C24-9DD5-FB70698EFA1A}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_5eecb56f9e1d4c5fa745f0cb1a013c2e.csproj" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ScriptMain.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_8c4c03eac64347229462ca52238cc36e")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_8c4c03eac64347229462ca52238cc36e")]
+[assembly: AssemblyCopyright("Copyright @  2018")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Resources.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8c4c03eac64347229462ca52238cc36e.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8c4c03eac64347229462ca52238cc36e.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8c4c03eac64347229462ca52238cc36e.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_8c4c03eac64347229462ca52238cc36e.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_8c4c03eac64347229462ca52238cc36e.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <BinaryItem
+                Name="ST_5eecb56f9e1d4c5fa745f0cb1a013c2e.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAGuqXl4AAAAAAAAAAOAAIiALATAAAC4AAAAIAAAAAAAA3kwA
+AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACgAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIxMAABPAAAAAGAAAHgEAAAAAAAAAAAAAAAAAAAA
+AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA5CwAAAAgAAAALgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAYAAAAAYAAAAwAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAIAAAAACAAAANgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADA
+TAAAAAAAAEgAAAACAAUAYCUAAHQmAAABAAAAAAAAANRLAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABMwEwD7AwAAAQAAEQIoGAAACm8ZAAAKcgEAAHBvGgAACm8b
+AAAKdCYAAAEKAigYAAAKbxkAAApyLQAAcG8aAAAKbxsAAAp0JgAAAQsCKBgAAApvGQAACnJbAABw
+bxoAAApvGwAACnQmAAABDAIoGAAACm8ZAAAKcocAAHBvGgAACm8bAAAKdCYAAAENAigYAAAKbxkA
+AApyqwAAcG8aAAAKbxsAAAp0JgAAARMEAigYAAAKbxkAAApyyQAAcG8aAAAKbxsAAAp0JgAAARMF
+AigYAAAKbxkAAApy6QAAcG8aAAAKbxsAAAp0JgAAARMGAigYAAAKbxkAAApyCQEAcG8aAAAKbxsA
+AAp0JgAAARMHAigYAAAKbxkAAApyKQEAcG8aAAAKbxsAAAp0JgAAARMIKBwAAAoTCXJJAQBwEgly
+iQEAcCgdAAAKEwoRCigeAAAKKB8AAAomcpsBAHBzIAAACighAAAKKCIAAAp0BgAAAiUWbxwAAAZy
+5QEAcBMLJW8XAAAGEQsTDRINfiMAAAoTDhIOFowsAAABEw8SD34jAAAKExASEH4jAAAKExESEX4j
+AAAKExISEn4jAAAKExMSE34jAAAKExQSFH4jAAAKExUSFX4jAAAKExYSFn4jAAAKExcSFxaMLAAA
+ARMYEhh+IwAAChMZEhl+IwAAChMaEhp+IwAAChMbEht+IwAAChMcEhxvDAAABhMMEQxvIwAABiVv
+GQAABm8UAAAGbw4AAAYlcksCAHAHKAIAAAYlbxkAAAZvFAAABm8OAAAGJXJxAgBwCCgCAAAGJW8Z
+AAAGbxQAAAZvDgAABiVylQIAcAkoAgAABiVvGQAABm8UAAAGbw4AAAYlcrECAHARBCgCAAAGJW8Z
+AAAGbxQAAAZvDgAABiVyxwIAcBEFKAIAAAYlbxkAAAZvFAAABm8OAAAGJXLfAgBwEQYoAgAABiVv
+GQAABm8UAAAGbw4AAAYlcvcCAHARBygCAAAGJW8ZAAAGbxQAAAZvDgAABiVyDwMAcBEIKAIAAAYR
+DHJJAQBwEQpyJwMAcAYoJAAAChMcEhwfEYwPAAACExsSG34jAAAKExoSGn4jAAAKExkSGX4jAAAK
+ExgSGH4jAAAKExcSF34jAAAKExYSFn4jAAAKExUSFX4jAAAKExQSFH4jAAAKExMSE34jAAAKExIS
+En4jAAAKExESEX4jAAAKExASEH4jAAAKEw8SD34jAAAKEw4SDn4jAAAKEw0SDX4jAAAKEx0SHW8l
+AAAGEQwWjBAAAAITHRIdfiMAAAoTDRINfiMAAAoTDhIObyEAAAYWjBAAAAITDhIOfiMAAAoTDRIN
+fiMAAAoTHRIdbx4AAAYCKBgAAAoWbyUAAAoqABMwEACUAAAAAgAAERaMLAAAAQoXjCwAAAELFows
+AAABDBaMLAAAAQ0WjCwAAAETBBeMLAAAARMFFowsAAABEwYWjCwAAAETBxaMLAAAARMIFowsAAAB
+EwkWjCwAAAETChiMLQAAARMLF4wtAAABEwwCbxkAAAZvFAAABg8BEgASARICEgMSBBIFEgwSBg8C
+EgsSBxIIEgkSCm8QAAAGJioeAigmAAAKKh4CKCcAAAoqrn4EAAAELR5yKwMAcNAEAAACKCgAAApv
+KQAACnMqAAAKgAQAAAR+BAAABCoafgUAAAQqHgKABQAABCoafgYAAAQqHgIoKwAACioucwkAAAaA
+BgAABCoAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAAQNAAAjfgAAcA0AAKQN
+AAAjU3RyaW5ncwAAAAAUGwAAoAMAACNVUwC0HgAAEAAAACNHVUlEAAAAxB4AALAHAAAjQmxvYgAA
+AAAAAAACAAABVz+iAQkBAAAA+gEzABYAAAEAAAAvAAAAEgAAACcAAAAlAAAAQwAAAAUAAAArAAAA
+IQAAAFYAAAA+AAAAAgAAAAUAAAAKAAAADQAAAAEAAAAFAAAAAQAAAAAACwgBAAAAAAAGAD4GrgkG
+AN4GrgkGAEQFbQkPACIKAAAGAHEFywgGAPIFywgGANMFywgGAMUGywgGAG8GywgGAIgGywgGAJ8F
+ywgGALoFOwcKAKMGsgcKAB4EsgcGAMADSQgGAPkLSQgOAFMDoAEGAF0ISQgGACcFbQkGABcJzgkG
+AO8IqAgSALUE9QcSAFgF9QcSADoEkwgGAOMErgkGAOkDSQgGAF4GjwkGAP4EjwkGACYGjwkGAIgF
+jwkGAAwFjwkGAA8GywgGAGYDMwsGANMEjwkKAOMHsgcWAJsKyQMWAF0DyQMGAFcHSQgGAJcNVgEG
+APsIVgEGAGoCSQgGANsHjwkGAEYJSQgGAG4ISQgGAA4ASQgGAIoDSQgGAH8NywgAAAAA5gAAAAAA
+AQABAAEAEAB7CN8COQABAAEAAAEAAHcL3wJJAAEABAAAABAA1QloCkEABAAEAAABEAC2CmgKYQAG
+AAgAoRAAAIcIgAIAAAcACwChEAAAXgCAAgAABwALAKEQAAC/DIACAAAHAAsAoRAAAKAMgAIAAAcA
+CwChEAAAKACAAgAABwALAKEQAACpDIACAAAHAAsAoRAAAJYLgAIAAAcACwChEAAAcwKAAgAABwAN
+AKEQAADBCIACAAAHABEAAQEAAN0LgAJJAAcAFQABAQAARguAAkkAJAAVAKEQAACGCIACAAAoABUA
+oRAAAGoMgAIAACgAHwAGBosBYwFWgGcLZgFWgO4DZgERAGIIagERAA4EbgERACEDcgEGBosBYwFW
+gJgMdgFWgMUAdgFWgKQEdgFWgLIAdgFWgEsNdgFWgOoKdgFWgN8MdgFWgNAKdgFWgAwBdgFWgCcN
+dgFWgAENdgFWgC0BdgFWgBQHdgFWgBgBdgFWgEoBdgFWgFYMdgFWgEoCdgFWgHoEdgFWgCoCdgFW
+gBEMdgFWgAABdgFWgGABdgFWgDoBdgFWgOoBdgFWgGIEdgFWgAYCdgFWgFgNdgFWgDgMdgEGBosB
+YwFWgFUKegFWgDEKegFWgD8KegFQIAAAAACGAIEIBgABAFgkAAAAAJEAAwN+AQEA+CQAAAAAhhhQ
+CQYABAAAJQAAAACDGFAJBgAEAAglAAAAAJMIEwmGAQQANCUAAAAAkwj2A4sBBAA7JQAAAACTCAIE
+kAEEAEMlAAAAAJYIBQyWAQUASiUAAAAAhhhQCQYABQBSJQAAAACRGFYJmwEFAAAAAAADAAYYcQAG
+AAUAAAAAAAMQxgV2CJ8BBQAAAAAAAwAGGH4ABgAWAAAAAAADEMYFZgcGABYAAAAAAAMABhgUAAYA
+FgAAAAAAAxDGBfwGxAEWAAAAAAADEMYN7wzmASUAAAAAAAMQxg34DBAAJgAAAAAAAwAGGKUABgAn
+AAAAAAADEMYNbwLqAScAAAAAAAMABhhGAAYAKAAAAAAAAxDGDa4D5gEoAAAAAAADEMYNkgvvASkA
+AAAAAAMABhhSAAYAKgAAAAAAAxDGDb0I9AEqAAAAAAADAAYYmAAGACsAAAAAAAMQxg1yA/kBKwAA
+AAAAAxDGDX4D/QErAAAAAAADAAYYiwAGACwAAAAAAAMQxgUADAICLAAAAAAAAxDGDa4D5gEvAAAA
+AAADAAYY2AAGADAAAAAAAAMQxgVcBAICMAAAAAAAAwAGGAEABgAzAAAAAAADEMYFygQGADMAAAAA
+AAMABhg4AAYAMwAAAAAAAxDGBSAADAIzAAAAAQDSAQAAAgAeDQAAAwA7DQAAAQAOBwAgAAAAAAEg
+AQC3AxEgAgAgCxEgAwCIDREgBAClChEgBQB5DBEgBgCTBBEgBwDYDBEgCAB0DBEgCQCOBBEgCgDy
+CxEgCwAyBxEgDACCAxEgDQA4CREgDgDdCBEgDwB2BxEgEABQCBEgAQAVDREgAgBSBBEgAwCeAhEg
+BACACREgBQBDAxEgBgAOCxEgBwB4AhEgCAAJCREgCQDyCxEgCgCHBxEgCwAKAxEgDACTAREgDQBd
+CREgDgC6AREgDwAzCAAgAAAAAAEgAQAOCQAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAEAAQAOCREg
+AQBcChEgAgDqCxEgAwCKDAAgAAAAABEgAQBcChEgAgDqCxEgAwCKDBEgAQC3AxEgAgC6CxEgAwCF
+CxEgBACyAhEgBQClChEgBgCtAhEgBwDWAREgCACgCxEgCQDFCxEgCgCsAREgCwAnCREgDAAyBxEg
+DQC/ChEgDgBUCxEgDwAnBxEgEAABCxEgEQAxAwYARAAGACAACQBIAAkALAAMAIUACQBQCQEAEQBQ
+CQYAGQBQCQoAKQBQCRAAMQBQCRAAOQBQCRAAQQBQCRAASQBQCRAAUQBQCRAAWQBQCRAAYQBQCRAA
+aQBQCQYAmQBQCQYAuQBQCRUAyQBQCQYA2QBQCRsA4QBQCRAA6QBQCQYA8QBQCSEA+QBQCSYA6QBQ
+CS4AAQFQCRAAEQFQCQEAcQBvC1cAGQGXCl0AIQFACGMAKQEEB2oAeQBxDW4AeQBVB3MAMQGzC3gA
+OQGRDX4ASQFQCRAAUQHvAIUAWQESA40A0QBeB5MAMQGzC5YAGQEpDAEAcQBQCQYAgQBQCQYA0QCc
+A64A0QB7DbYAoQBQCbwAwQBQCQYACAAIANYACAAMANsACAAgANYACAAkANYACAAoANsACAAsANsA
+CAAwAOAACAA0AOUACAA4AOoACAA8AO8ACABAAPQACABEAPkACABIAPkACABMAP4ACABQAAMBCABU
+AAgBCABYAA0BCABcABIBCABgABcBCABkABwBCABoACEBCABsACYBCABwACsBCAB0ADABCAB4ADUB
+CAB8ADoBCACAAD8BCACEAEQBCACIAEkBCACMAE4BCACUANYACACYAFMBCACcAFgBKQBzAIACLgAL
+AFgCLgATAGECLgAbAIACLgAjAIkCLgArALICLgAzALICLgA7ALICLgBDAIkCLgBLALgCLgBTALIC
+LgBbAM8CQwBjANsASQBzAIACgwBrANsAiQC7ADQDqQC7AD0DwQB7ANsAwwB7ANsAwwCDAHwDwwCL
+ANwDwwCTANsAyQC7ADQD4wB7ANsA4wCbAAYE4wCLAA0E4wCTANsA6QC7AEYDAwF7ANsAAwGjADcE
+AwGrAJ4ECQG7AE8DIwF7ANsAIwGLAP8EIwGDAHwDIwGTANsAKQG7AFgDQwF7ANsAQwGLACkFQwGb
+AAYEQwGTANsASQG7ADQDYwF7ANsAYwGjAFMFYwGrALQFgAG7ABkDgwF7ANsAgwGzABIGgwGLABwG
+gwGTANsAowF7ANsAowGLAEYGowGTANsAwAG7ACIDwwF7ANsAwwGzAHAGwwGLAHoGwwGTANsA4wF7
+ANsA4wGLAKQG4wGrAM4GAAK7ACsDAwJ7ANsAAwKLACMHAwKrAE0HIAK7ADQDIwJ7ANsAIwKLANwD
+IwKzAKMHIwKTANsAQAK7ADQDQwJ7ANsAQwKzAKMHQwKLAP8EQwKTANsAgAK7AD0DwAK7ADQD4AK7
+AEYDIAO7AE8DYAO7AFgDgAO7AFgDwAO7AGED4AO7ADQDIAS7AGEDYAS7AGoDoAS7AHMDCwBdAQ0A
+XwEPAF8BEQBfARMAXwEVAF8BFwBfARkAXwEbAF8BHQBfAR8AXwEhAF8BIwBfASUAXwEnAF8BKQBf
+ASsAXwEtAF8BLwBfATEAXwEzAF8BNQBfATcAXwE5AF8BOwBfAT0AXwE/AF8BQQBfAUMAXwFFAF8B
+RwBfAUkAXwFLAGEBTQBhAU8AXQFRAGEBUwBdAVUAXQFZAF8BWwBfAV0AXwFfAGEBYQBfAWMAXwFl
+AF8BZwBfAWkAXwFrAF8BbQBfAW8AXwFxAF8BcwBfAXUAXwF3AF8BeQBfAXsAXwF9AF8BfwBfAYEA
+XwGDAF8BhQBfAYcAXwE0AJ4ABAABAAUAAwAOAAQAEQAGABIACgAAABcJMgIAABYENwIAACEMPAIA
+AGwNQQIAAHMCRQIAALsDQQIAAJYLSgIAAMEITwIAAIIDVAIAALsDQQICAAUAAwACAAYABQABAAcA
+BQACAAgABwACABEACQABABIACQACABQACwACABYADQACABcADwACABkAEQACABsAEwABABwAEwAC
+AB8AFQAEgAAAAQAAAMccBVwAAAAAAAC7AgAABAAAAAAAAAAAAAAAxADJAQAAAAAPAAAAAAAAAAAA
+AADNAJMHAAAAAAQAAAAAAAAAAAAAAMQAoAEAAAAABAAAAAAAAAAAAAAAxABJCAAAAAAPAAAAAAAA
+AAAAAADNAGwBAAAAAAAAAAABAAAA3wkAAAAAAF9WdGJsR2FwMl8xMgBJbnQzMgBfVnRibEdhcDJf
+MgBTYXZlQXMyAERvY3VtZW50RXZlbnRzMgBfVnRibEdhcDNfMjUzAF9WdGJsR2FwMV8zAF9WdGJs
+R2FwMl8zAEFwcGxpY2F0aW9uRXZlbnRzNABfVnRibEdhcDFfMTUAX1Z0YmxHYXAxXzQ1AF9WdGJs
+R2FwNF84NQBfVnRibEdhcDNfMTcAX1Z0YmxHYXAxXzQ3AHdkRm9ybWF0VGVtcGxhdGU5NwB3ZEZv
+cm1hdERvY3VtZW50OTcAX1Z0YmxHYXAxXzE1OQA8TW9kdWxlPgBHZXRUeXBlRnJvbUNMU0lEAHdk
+Rm9ybWF0UERGAHdkRm9ybWF0UlRGAHdkRm9ybWF0RmlsdGVyZWRIVE1MAHdkRm9ybWF0SFRNTAB3
+ZEZvcm1hdEZsYXRYTUwAd2RGb3JtYXRYTUwAU3lzdGVtLklPAHdkRm9ybWF0WFBTAE1pY3Jvc29m
+dC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwB2YWx1ZV9fAE1hdGNoS2FzaGlkYQBTeXN0ZW0uRGF0YQBT
+YXZlRm9ybXNEYXRhAE1hdGNoQWxlZkhhbXphAG1zY29ybGliAGRvYwBSZWFkT25seVJlY29tbWVu
+ZGVkAHdkRm9ybWF0RmxhdFhNTE1hY3JvRW5hYmxlZAB3ZEZvcm1hdEZsYXRYTUxUZW1wbGF0ZU1h
+Y3JvRW5hYmxlZAB3ZEZvcm1hdFhNTFRlbXBsYXRlTWFjcm9FbmFibGVkAHdkRm9ybWF0WE1MRG9j
+dW1lbnRNYWNyb0VuYWJsZWQAR3VpZABnZXRfRmluZABGb3J3YXJkAE1pY3Jvc29mdC5PZmZpY2Uu
+SW50ZXJvcC5Xb3JkAE1hdGNoV2hvbGVXb3JkAFdyaXRlUGFzc3dvcmQAU1RfNWVlY2I1NmY5ZTFk
+NGM1ZmE3NDVmMGNiMWEwMTNjMmUAU1RfOGM0YzAzZWFjNjQzNDcyMjk0NjJjYTUyMjM4Y2MzNmUA
+RmluZEFuZFJlcGxhY2UAQ3JlYXRlSW5zdGFuY2UAZGVmYXVsdEluc3RhbmNlAENvbXBhdGliaWxp
+dHlNb2RlAE1hdGNoU291bmRzTGlrZQBEYXRhVGFibGUAVmFyaWFibGUASUVudW1lcmFibGUAZ2V0
+X1Zpc2libGUAc2V0X1Zpc2libGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUA
+Z2V0X05hbWUARmlsZU5hbWUARGF0ZVRpbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUnVudGlt
+ZQBUeXBlAEZhaWx1cmUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAFZT
+VEFSVFNjcmlwdE9iamVjdE1vZGVsQmFzZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBNYXRjaENh
+c2UAQ2xvc2UAd2RGb3JtYXRGbGF0WE1MVGVtcGxhdGUAd2RGb3JtYXRYTUxUZW1wbGF0ZQBXcml0
+ZVBhc3N3b3JkVGVtcGxhdGUAd2RGb3JtYXRUZW1wbGF0ZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBB
+Y3RpdmF0ZQBEaXNwSWRBdHRyaWJ1dGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUAR3VpZEF0
+dHJpYnV0ZQBDb21FdmVudEludGVyZmFjZUF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0
+cmlidXRlAERlYnVnZ2FibGVBdHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2Vt
+Ymx5VGl0bGVBdHRyaWJ1dGUASW50ZXJmYWNlVHlwZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFy
+a0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9u
+QXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUARGVmYXVsdE1lbWJlckF0dHJp
+YnV0ZQBUeXBlSWRlbnRpZmllckF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmli
+dXRlAENvQ2xhc3NBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5Q29w
+eXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRUYXNrRW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJs
+eUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUARXhlY3V0ZQBn
+ZXRfVmFsdWUAdmFsdWUAd2RGb3JtYXRXZWJBcmNoaXZlAExpbmVFbmRpbmcARW5jb2RpbmcAU3lz
+dGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUb1N0cmluZwBNaXNzaW5nAENsZWFyRm9ybWF0dGluZwBO
+b0VuY29kaW5nRGlhbG9nAFJlcGxhY2VXaXRoAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuU2NyaXB0VGFz
+awBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNrAE1hcnNoYWwAU2NyaXB0
+T2JqZWN0TW9kZWwAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNUXzVlZWNiNTZmOWUxZDRjNWZhNzQ1
+ZjBjYjFhMDEzYzJlLmRsbABNYXRjaENvbnRyb2wAZ2V0X0l0ZW0AU3lzdGVtAFhNTFRyYW5zZm9y
+bQBFbnVtAHJlc291cmNlTWFuAEJvb2xlYW4AT3BlbgBTY3JpcHRNYWluAF9BcHBsaWNhdGlvbgBT
+eXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBnZXRfU2VsZWN0aW9uAFN5
+c3RlbS5SZWZsZWN0aW9uAERvY3VtZW50RGlyZWN0aW9uAEN1bHR1cmVJbmZvAERpcmVjdG9yeUlu
+Zm8AV3JhcABwcm9wAGdldF9SZXNvdXJjZU1hbmFnZXIAU2F2ZUFzQU9DRUxldHRlcgBPcGVuQW5k
+UmVwYWlyAEFjdGl2YXRvcgAuY3RvcgAuY2N0b3IATWF0Y2hEaWFjcml0aWNzAFN5c3RlbS5EaWFn
+bm9zdGljcwBNYXRjaFdpbGRjYXJkcwBTeXN0ZW0uUnVudGltZS5JbnRlcm9wU2VydmljZXMAU3lz
+dGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVzb3VyY2VzAFNUXzhjNGMwM2Vh
+YzY0MzQ3MjI5NDYyY2E1MjIzOGNjMzZlLlByb3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwBE
+ZWJ1Z2dpbmdNb2RlcwB3ZFNhdmVDaGFuZ2VzAHdkUHJvbXB0VG9TYXZlQ2hhbmdlcwB3ZERvTm90
+U2F2ZUNoYW5nZXMAU1RfOGM0YzAzZWFjNjQzNDcyMjk0NjJjYTUyMjM4Y2MzNmUuUHJvcGVydGll
+cwBnZXRfVmFyaWFibGVzAEFkZFRvUmVjZW50RmlsZXMAU2V0dGluZ3MASW5zZXJ0TGluZUJyZWFr
+cwB3ZEZvcm1hdERPU1RleHRMaW5lQnJlYWtzAHdkRm9ybWF0VGV4dExpbmVCcmVha3MAQWRkQmlE
+aU1hcmtzAE1hdGNoQWxsV29yZEZvcm1zAENvbmZpcm1Db252ZXJzaW9ucwBTeXN0ZW0uQ29sbGVj
+dGlvbnMAV2RTYXZlT3B0aW9ucwBBbGxvd1N1YnN0aXR1dGlvbnMAU3VjY2VzcwBnZXRfRHRzAFNj
+cmlwdFJlc3VsdHMATG9ja0NvbW1lbnRzAGdldF9Eb2N1bWVudHMARW1iZWRUcnVlVHlwZUZvbnRz
+AENvbmNhdABGaWxlRm9ybWF0AFNhdmVOYXRpdmVQaWN0dXJlRm9ybWF0AFdkU2F2ZUZvcm1hdABP
+cmlnaW5hbEZvcm1hdABPYmplY3QAUXVpdABnZXRfRGVmYXVsdAB3ZEZvcm1hdERvY3VtZW50RGVm
+YXVsdABzZXRfVGFza1Jlc3VsdAB3ZEZvcm1hdFN0cmljdE9wZW5YTUxEb2N1bWVudAB3ZEZvcm1h
+dFhNTERvY3VtZW50AF9Eb2N1bWVudABXcml0ZVBhc3N3b3JkRG9jdW1lbnQAUm91dGVEb2N1bWVu
+dAB3ZEZvcm1hdERvY3VtZW50AERvY3VtZW50RXZlbnRzMl9FdmVudABBcHBsaWNhdGlvbkV2ZW50
+czRfRXZlbnQAUmV2ZXJ0AHdkRm9ybWF0RE9TVGV4dABnZXRfVGV4dABzZXRfVGV4dAB3ZEZvcm1h
+dEVuY29kZWRUZXh0AEZpbmRUZXh0AGZpbmRUZXh0AHdkRm9ybWF0VW5pY29kZVRleHQAcmVwbGFj
+ZVdpdGhUZXh0AHdkRm9ybWF0VGV4dAB3ZEZvcm1hdE9wZW5Eb2N1bWVudFRleHQAZ2V0X1RvZGF5
+AGdldF9Bc3NlbWJseQBSZWFkT25seQBDcmVhdGVEaXJlY3RvcnkAAAAAACtVAHMAZQByADoAOgBT
+AHQAdQBkAGUAbgB0AEYAaQBsAGUATgBhAG0AZQAALVUAcwBlAHIAOgA6AFMAdAB1AGQAZQBuAHQA
+RgBpAHIAcwB0AE4AYQBtAGUAACtVAHMAZQByADoAOgBTAHQAdQBkAGUAbgB0AEwAYQBzAHQATgBh
+AG0AZQAAI1UAcwBlAHIAOgA6AFQAZQBzAHQAQQBkAGQAcgBlAHMAcwAAHVUAcwBlAHIAOgA6AFQA
+ZQBzAHQAVABpAG0AZQAAH1UAcwBlAHIAOgA6AFQAZQBzAHQARABhAHQAZQAxAAAfVQBzAGUAcgA6
+ADoAVABlAHMAdABEAGEAdABlADIAAB9VAHMAZQByADoAOgBUAGUAcwB0AEQAYQB0AGUAMwAAH1UA
+cwBlAHIAOgA6AFQAZQBzAHQARABhAHQAZQA0AAA/QwA6AFwAVABlAG0AcABcAEYAaQBsAGUAXwBD
+AHIAZQBhAHQAaQBvAG4AXABBAEMAVABfAEEAYwBjAHMAXAAAEU0ATQAtAGQAZAAtAHkAeQABSTAA
+MAAwADIAMAA5AEYARgAtADAAMAAwADAALQAwADAAMAAwAC0AQwAwADAAMAAtADAAMAAwADAAMAAw
+ADAAMAAwADAANAA2AAFlQwA6AFwAVABlAG0AcABcAEYAaQBsAGUAXwBDAHIAZQBhAHQAaQBvAG4A
+XABBAEMAVABfAEEAYwBjAHMAXABMAGUAdAB0AGUAcgBUAGUAbQBwAGwAYQB0AGUALgBkAG8AYwB4
+AAAlewBTAHQAdQBkAGUAbgB0AEYAaQByAHMAdABOAGEAbQBlAH0AACN7AFMAdAB1AGQAZQBuAHQA
+TABhAHMAdABOAGEAbQBlAH0AABt7AFQAZQBzAHQAQQBkAGQAcgBlAHMAcwB9AAAVewBUAGUAcwB0
+AFQAaQBtAGUAfQAAF3sAVABlAHMAdABEAGEAdABlADEAfQAAF3sAVABlAHMAdABEAGEAdABlADIA
+fQAAF3sAVABlAHMAdABEAGEAdABlADMAfQAAF3sAVABlAHMAdABEAGEAdABlADQAfQAAA1wAAHFT
+AFQAXwA4AGMANABjADAAMwBlAGEAYwA2ADQAMwA0ADcAMgAyADkANAA2ADIAYwBhADUAMgAyADMA
+OABjAGMAMwA2AGUALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAA
+AAbU2pXqXRhFlPUtHiAqUBcABCABAQgDIAABBSABARERBCABAQ4FIAEBEVkFIAEBEmkEIAEBBgcg
+AgESaRJpBSACAQ4OIgceDg4ODg4ODg4OET0OHBIkHBwcHBwcHBwcHBwcHBwcHBwFIAASgI0FIAAS
+gJEGIAESgJUcAyAAHAQAABE9BCABDg4FAAIODg4GAAESgKEOBwABEmkRgKUFAAEcEmkCBhwHAAQO
+Dg4ODg8HDRwcHBwcHBwcHBwcHBwHAAESaRGAuQUgABKAvQcgAgEOEoC9CLd6XFYZNOCJCImEXc2A
+gMyRBAAAAAAEAQAAAAQCAAAABAMAAAAEBAAAAAQFAAAABAYAAAAEBwAAAAQIAAAABAkAAAAECgAA
+AAQLAAAABAwAAAAEDQAAAAQOAAAABA8AAAAEEAAAAAQRAAAABBIAAAAEEwAAAAQUAAAABBUAAAAE
+FgAAAAQXAAAABBgAAAAE/////wT+////ARwBGwETAgYIAwYRDAMGElEDBhJVAwYSFAMGETwDBhFA
+BwADARIYHBwEAAASUQQAABJVBQABARJVBAAAEhQDAAABJCAQEiQQHBAcEBwQHBAcEBwQHBAcEBwQ
+HBAcEBwQHBAcEBwQHCEgDwIQHBAcEBwQHBAcEBwQHBAcEBwQHBAcEBwQHBAcEBwDIAAOBCAAEjQE
+IAASMAQgABI4AyAAAgQgAQECCSADARAcEBwQHCUgEQEQHBAcEBwQHBAcEBwQHBAcEBwQHBAcEBwQ
+HBAcEBwQHBAcBAgAElEECAASVQQIABIUAwgADgQIABI0BAgAEjAECAASOAMIAAIIAQAIAAAAAAAe
+AQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NUXzhjNGMwM2VhYzY0
+MzQ3MjI5NDYyY2E1MjIzOGNjMzZlAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMTgAAEkBABou
+TkVURnJhbWV3b3JrLFZlcnNpb249djQuNwEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBG
+cmFtZXdvcmsgNC43CAEAEwAAAAAACAEAHwAAAAAACAEAvAEAAAAACAEAAAAAAAAACAEABgEAAAAA
+CAEABgAAAAAACAEABQAAAAAACAEAFwAAAAAACAEAUQQAAAAACAEAcQAAAAAACAEAOAIAAAAAXwEA
+WlN5c3RlbS5PYmplY3QsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJh
+bCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQAAKQEAJDAwMDIwOTcwLTAwMDAtMDAw
+MC1DMDAwLTAwMDAwMDAwMDA0NgAABgEAAgAAACkBACQwMDAyMEEwMS0wMDAwLTAwMDAtQzAwMC0w
+MDAwMDAwMDAwNDYAAGYBADBNaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuV29yZC5BcHBsaWNhdGlv
+bkV2ZW50czQwTWljcm9zb2Z0Lk9mZmljZS5JbnRlcm9wLldvcmQuQXBwbGljYXRpb25FdmVudHM0
+AABgAQAkMDAwMjA5MDUtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDQ2Nk1pY3Jvc29mdC5PZmZp
+Y2UuSW50ZXJvcC5Xb3JkLkFwcGxpY2F0aW9uRXZlbnRzNF9FdmVudAAAKQEAJDAwMDIwOTZCLTAw
+MDAtMDAwMC1DMDAwLTAwMDAwMDAwMDA0NgAAKQEAJDAwMDIwQTAyLTAwMDAtMDAwMC1DMDAwLTAw
+MDAwMDAwMDA0NgAAYAEALU1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5Xb3JkLkRvY3VtZW50RXZl
+bnRzMi1NaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuV29yZC5Eb2N1bWVudEV2ZW50czIAAF0BACQw
+MDAyMDkwNS0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwNDYzTWljcm9zb2Z0Lk9mZmljZS5JbnRl
+cm9wLldvcmQuRG9jdW1lbnRFdmVudHMyX0V2ZW50AAAJAQAESXRlbQAAKQEAJDAwMDIwOTZDLTAw
+MDAtMDAwMC1DMDAwLTAwMDAwMDAwMDA0NgAAKQEAJDAwMDIwOUIwLTAwMDAtMDAwMC1DMDAwLTAw
+MDAwMDAwMDA0NgAACQEABFRleHQAACkBACQwMDAyMDk3NS0wMDAwLTAwMDAtQzAwMC0wMDAwMDAw
+MDAwNDYAACkBACQ2QUVFQkMxMC0wNDIwLTNGQjEtOEEwNC01RjIwNTNDNERBRTkAAFQBACQwMDAy
+MDkwNS0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwNDYqTWljcm9zb2Z0Lk9mZmljZS5JbnRlcm9w
+LldvcmQuV2RTYXZlRm9ybWF0AAApAQAkRTFCNEE5NjgtMzA3Mi0zMDYwLUI2QjctMUExMzU2RDQ1
+Q0EyAABVAQAkMDAwMjA5MDUtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDQ2K01pY3Jvc29mdC5P
+ZmZpY2UuSW50ZXJvcC5Xb3JkLldkU2F2ZU9wdGlvbnMAAAkBAAROYW1lAAAAAAC0AAAAzsrvvgEA
+AACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9u
+PTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4
+OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0
+AAAAtEwAAAAAAAAAAAAAzkwAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBMAAAAAAAAAAAAAAAA
+X0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAYAACA
+AAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAAWGAAABoEAAAA
+AAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9BO/+AAABAAAA
+AQAFXMccAAABAAVcxxw/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEAVgBhAHIARgBp
+AGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAAAAAAsAR6AwAA
+AQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAAMAAwADAANABiADAAAAAa
+AAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4AeQBOAGEAbQBlAAAA
+AAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAVABfADgAYwA0
+AGMAMAAzAGUAYQBjADYANAAzADQANwAyADIAOQA0ADYAMgBjAGEANQAyADIAMwA4AGMAYwAzADYA
+ZQAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA3ADMANgA3AC4AMgAz
+ADUANQA3AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADUAZQBlAGMA
+YgA1ADYAZgA5AGUAMQBkADQAYwA1AGYAYQA3ADQANQBmADAAYwBiADEAYQAwADEAMwBjADIAZQAu
+AGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkA
+ZwBoAHQAIABAACAAIAAyADAAMQA4AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBr
+AHMAAAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBUAF8A
+NQBlAGUAYwBiADUANgBmADkAZQAxAGQANABjADUAZgBhADcANAA1AGYAMABjAGIAMQBhADAAMQAz
+AGMAMgBlAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAVABfADgA
+YwA0AGMAMAAzAGUAYQBjADYANAAzADQANwAyADIAOQA0ADYAMgBjAGEANQAyADIAMwA4AGMAYwAz
+ADYAZQAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANwAzADYA
+NwAuADIAMwA1ADUANwAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAA
+ADEALgAwAC4ANwAzADYANwAuADIAMwA1ADUANwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAwAAADgPAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
+            </ScriptProject>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{29B01F1C-5F76-42D0-8CE8-B7E7D5C7084F}"
+          DTS:ObjectName="{29B01F1C-5F76-42D0-8CE8-B7E7D5C7084F}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::LASID" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{3C297DE4-62DF-4DB4-890F-4C19ADCF6C3F}"
+          DTS:ObjectName="{3C297DE4-62DF-4DB4-890F-4C19ADCF6C3F}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::StudentFirstName" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{C3F7ADC2-DDFF-45F9-91B1-25B9FFA3E0A6}"
+          DTS:ObjectName="{C3F7ADC2-DDFF-45F9-91B1-25B9FFA3E0A6}"
+          DTS:ValueIndex="2"
+          DTS:VariableName="User::StudentLastName" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{EF069617-D9D8-463D-A4CE-A43F182AEE6B}"
+          DTS:ObjectName="{EF069617-D9D8-463D-A4CE-A43F182AEE6B}"
+          DTS:ValueIndex="3"
+          DTS:VariableName="User::StudentFileName" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{95078A08-4B2C-4F3A-81FF-15FCE9F4033C}"
+          DTS:ObjectName="{95078A08-4B2C-4F3A-81FF-15FCE9F4033C}"
+          DTS:ValueIndex="4"
+          DTS:VariableName="User::TestAddress" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{A2439F1F-B539-4465-85D4-9338BAEE0852}"
+          DTS:ObjectName="{A2439F1F-B539-4465-85D4-9338BAEE0852}"
+          DTS:ValueIndex="5"
+          DTS:VariableName="User::TestDate1" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{09765C6F-4BE0-4337-8354-073CA6D54D52}"
+          DTS:ObjectName="{09765C6F-4BE0-4337-8354-073CA6D54D52}"
+          DTS:ValueIndex="6"
+          DTS:VariableName="User::TestDate2" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{35621488-C240-40F0-9361-93FCA0E53CBB}"
+          DTS:ObjectName="{35621488-C240-40F0-9361-93FCA0E53CBB}"
+          DTS:ValueIndex="7"
+          DTS:VariableName="User::TestDate3" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{8B08A62F-9D4F-4D70-81D1-9F585AED7817}"
+          DTS:ObjectName="{8B08A62F-9D4F-4D70-81D1-9F585AED7817}"
+          DTS:ValueIndex="8"
+          DTS:VariableName="User::TestDate4" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{F75256E8-3E6E-4C54-AC79-17B153DF9FF7}"
+          DTS:ObjectName="{F75256E8-3E6E-4C54-AC79-17B153DF9FF7}"
+          DTS:ValueIndex="9"
+          DTS:VariableName="User::TestTime" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load GeneralFileCreation"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D09FFF85-A4D3-4FCC-9E78-71A169BCF4D6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load GeneralFileCreation"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load GeneralFileCreation\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load GeneralFileCreation\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DateFile.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[DateFile.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[LASID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LASID]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[LASID]"
+                      name="LASID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestAddress]"
+                      length="100"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestAddress]"
+                      name="TestAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[StudentFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StudentFirstName]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[StudentFirstName]"
+                      name="StudentFirstName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[StudentLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StudentLastName]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[StudentLastName]"
+                      name="StudentLastName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestCity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestCity]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestCity]"
+                      name="TestCity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestDate1]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate1]"
+                      name="TestDate1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestDate2]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate2]"
+                      name="TestDate2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate3]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestDate3]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate3]"
+                      name="TestDate3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate4]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestDate4]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate4]"
+                      name="TestDate4"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestTime]"
+                      length="50"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestTime]"
+                      name="TestTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LASID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LASID" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StudentFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StudentFirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StudentLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StudentLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestCity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestCity" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestDate1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate1" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestDate2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate2" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestDate3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate3" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestDate4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate4" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TestTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestTime" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load GeneralFileCreation\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[GeneralFileCreation]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load GeneralFileCreation\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
+                  connectionManagerRefId="Package.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LASID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LASID"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LASID]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[LASID]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestCity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TestCity"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestCity]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestCity]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="TestAddress"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestAddress]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestAddress]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TestTime"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestTime]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestTime]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestDate1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TestDate1"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate1]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate1]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestDate2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TestDate2"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate2]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate2]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestDate3]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TestDate3"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate3]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate3]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestDate4]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TestDate4"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate4]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[TestDate4]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentLastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="StudentLastName"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[StudentLastName]" />
+                    <inputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentFirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="StudentFirstName"
+                      externalMetadataColumnId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output].Columns[StudentFirstName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentIndex]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StudentIndex" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StudentName" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LASID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LASID" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[psn]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="psn" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="TestAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestName1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestName1" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestName2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestName2" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestName3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestName3" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestCity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestCity" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestTime" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate1" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate2" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate3" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate4" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load GeneralFileCreation\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load GeneralFileCreation\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load GeneralFileCreation\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load GeneralFileCreation.Paths[Flat File Source Output]"
+              endId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Load GeneralFileCreation\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Query variablales"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{BA34E85E-6A5D-490A-91B7-6D4F693A6BFC}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Query variablales"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{266C7DA1-9F4F-45B1-B45E-6B005CA04397}"
+          SQLTask:SqlStatementSource="select distinct&#xA;      lasid&#xA;     ,g.FirstName&#xA;     ,g.LastName&#xA;     ,concat('ACT Testing 2020 - ',st.stIndex,'.pdf') as StudentFileName&#xA;     ,testAddress&#xA;      ,testDate1&#xA;      ,testDate2&#xA;      ,testDate3&#xA;      ,testDate4&#xA;       ,testTime&#xA;       --,testCity&#xA;from generalfilecreation g&#xA;inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID"
+          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::QueryResult" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate GeneralFileCreation"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{27963F07-E320-4AC5-B777-D83B8D9A575B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate GeneralFileCreation"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{266C7DA1-9F4F-45B1-B45E-6B005CA04397}"
+          SQLTask:SqlStatementSource="Truncate Table GeneralFileCreation" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{BE42363B-7EF3-40C7-BC04-C507EAF3E3AD}"
+      DTS:From="Package\Query variablales"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Foreach Student Container" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
+      DTS:CreationName=""
+      DTS:DTSID="{ABDC9AC1-DFB4-4A51-BB09-1A84446141A9}"
+      DTS:From="Package\Foreach Student Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 11"
+      DTS:To="Package\Create Map File" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{352D6C58-C194-4274-BD84-BDC2DDCE8C32}"
+      DTS:From="Package\Load GeneralFileCreation"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4 1"
+      DTS:To="Package\Query variablales" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{93F0BD7D-DF6F-42EE-9734-2985D0A321D8}"
+      DTS:From="Package\Truncate GeneralFileCreation"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5 1"
+      DTS:To="Package\Load GeneralFileCreation" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Create Map File"
+          TopLeft="78,287" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Foreach Student Container\Script Task"
+          TopLeft="14.4444444444445,7.7777777777778" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="189,55"
+          Size="189,98"
+          Id="Package\Foreach Student Container"
+          TopLeft="65.5,130.363636363636" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Load GeneralFileCreation"
+          TopLeft="370,64.641414141414" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Query variablales"
+          TopLeft="380.77777777778,161.777777777778" />
+        <NodeLayout
+          Size="215,42"
+          Id="Package\Truncate GeneralFileCreation"
+          TopLeft="60,60" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="380.77777777778,181.070707070707">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-126.27777777778,0"
+              Start="0,0"
+              End="-118.77777777778,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-118.77777777778,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11]"
+          TopLeft="157,228.363636363636">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.636363636364"
+              Start="0,0"
+              End="0,51.136363636364">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.136363636364" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4 1]"
+          TopLeft="464.38888888889,106.641414141414">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.136363636364"
+              Start="0,0"
+              End="0,47.636363636364">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.636363636364" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5 1]"
+          TopLeft="275,83.320707070707">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="95,0"
+              Start="0,0"
+              End="87.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="87.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Create Map File">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Create Map File\OLE DB Source"
+          TopLeft="209.5,40.5" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Create Map File\Flat File Destination"
+          TopLeft="183,189" />
+        <EdgeLayout
+          Id="Package\Create Map File.Paths[OLE DB Source Output]"
+          TopLeft="284.5,82.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.5,106.5"
+              Start="0,0"
+              End="-15.5,99">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.25"
+                    Point2="0,53.25"
+                    Point3="-4,53.25" />
+                  <mssgle:LineSegment
+                    End="-11.5,53.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.5,53.25"
+                    Point2="-15.5,53.25"
+                    Point3="-15.5,57.25" />
+                  <mssgle:LineSegment
+                    End="-15.5,99" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Create Map File\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load GeneralFileCreation">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load GeneralFileCreation\OLE DB Destination"
+          TopLeft="122,168" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load GeneralFileCreation\Flat File Source"
+          TopLeft="122.5,28.5" />
+        <EdgeLayout
+          Id="Package\Load GeneralFileCreation.Paths[Flat File Source Output]"
+          TopLeft="198,70.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.5,97.5"
+              Start="0,0"
+              End="9.5,90">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44.75"
+                    Point2="0,48.75"
+                    Point3="4,48.75" />
+                  <mssgle:LineSegment
+                    End="5.5,48.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,48.75"
+                    Point2="9.5,48.75"
+                    Point3="9.5,52.75" />
+                  <mssgle:LineSegment
+                    End="9.5,90" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load GeneralFileCreation\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
