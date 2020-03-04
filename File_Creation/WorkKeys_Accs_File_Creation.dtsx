@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/20/2020 1:53:52 PM"
@@ -7,12 +7,12 @@
   DTS:CreatorName="UVIEW\kshelton"
   DTS:DTSID="{C4E92EB9-F4C2-4920-AA8D-44D33614630F}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.71"
+  DTS:LastModifiedProductVersion="15.0.1900.80"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{FA7CFBAF-1D41-4344-A75D-775D22545A77}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{E0C616D7-6F1B-43DE-AE75-D294B1589AC4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Temp\File_Creation\Workkeys_Accs\DataFile.csv">
+          DTS:ConnectionString="C:\File_Creation\WorkKeys_Accs_File\DataFile.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LASID"
-              DTS:DTSID="{0A5F85C9-844D-4795-A7EA-682C187E6744}"
+              DTS:DTSID="{44C43C5F-024C-44A0-BB79-0069E2623C81}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentFirstName"
-              DTS:DTSID="{36974851-1BCC-4F62-BB84-6419CBA43C72}"
+              DTS:DTSID="{EC55BE46-BBD1-4ACC-9561-0100E03B6CAB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentLastName"
-              DTS:DTSID="{59036C53-E93D-4719-AC44-E496C386C784}"
+              DTS:DTSID="{4BE01F20-97D7-47CD-A729-D2987D86B524}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestAddress"
-              DTS:DTSID="{7C30AB54-3332-474F-AF44-5F5F87814621}"
+              DTS:DTSID="{ECDA1B1B-B107-432D-A2E4-7B98812CD3B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestCity"
-              DTS:DTSID="{362E6359-96A3-41F2-A443-CE1B60741944}"
+              DTS:DTSID="{9BAF2189-253F-40FD-A340-BD0870EBF11E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestDate1"
-              DTS:DTSID="{E93D39E2-1A3E-45E9-8D8A-D8BDE9E1A872}"
+              DTS:DTSID="{52C8B18B-BA9B-4D8E-878B-EEBC9FECFD53}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestDate2"
-              DTS:DTSID="{64AB7391-4EDE-4136-8594-945F4EEE2C20}"
+              DTS:DTSID="{FB8BE378-5EB8-4053-933E-5A922354D660}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestDate3"
-              DTS:DTSID="{0B969900-1155-4BCE-96EA-9F5152FDCBE5}"
+              DTS:DTSID="{B8FC2774-D4D8-4B37-A44A-283F4D704751}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestTime"
-              DTS:DTSID="{091D2718-4815-4EEA-AD25-DAACD0C5A1D6}"
+              DTS:DTSID="{6D046678-016D-4DA6-925A-D7B69A878B29}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestName1"
-              DTS:DTSID="{8E4F9429-81C9-4195-B89E-6166E5C69497}"
+              DTS:DTSID="{FA728F04-EA08-42D3-B414-8D3DCEDD827B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestName2"
-              DTS:DTSID="{07EEB1B0-BA0E-4EB4-A344-8E3B42534959}"
+              DTS:DTSID="{458C9370-2D83-4E55-9D4E-274B956364FA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestName3"
-              DTS:DTSID="{92FECB7E-5997-4233-B16C-9AADF608DFC1}"
+              DTS:DTSID="{2B82D525-9BC6-4E54-98AC-4B4B7D06B3BD}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -157,7 +157,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Temp\File_Creation\Workkeys_Accs\map.csv">
+          DTS:ConnectionString="C:\File_Creation\WorkKeys_Accs_File\map.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +166,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="stIndex"
-              DTS:DTSID="{440F9554-6AAF-46B6-8B14-33430F6A6E06}"
+              DTS:DTSID="{64587C82-89CF-4167-9374-D5468431F1A4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,20 +175,10 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="studentfilename"
-              DTS:DTSID="{0FD0E4EA-D763-4721-AE97-17AD10264C0C}"
+              DTS:DTSID="{D4B3D4AF-8F23-4446-8091-BD30239F5FE2}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{CE1F2AC4-ED81-497D-9CD4-12CA9F23AC37}"
-      DTS:ObjectName="uvacontent.UNIVERSITYVIEW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=uvacontent;Initial Catalog=UNIVERSITYVIEW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -503,8 +493,8 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID</property>
               <connections>
                 <connection
                   refId="Package\Create Map File\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
-                  connectionManagerRefId="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
+                  connectionManagerID="{23CF77F1-5550-4EFB-8186-9638AE49E094}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -826,14 +816,14 @@ namespace ST_8c4c03eac64347229462ca52238cc36e
             string TestDate3 = (string)Dts.Variables["User::TestDate3"].Value;
 
 
-            string root = "C:\\Temp\\File_Creation\\Workkeys_Accs\\";
+            string root = "C:\\File_Creation\\WorkKeys_Accs_File\\";
             string dateString = currentDate.ToString("MM-dd-yy");
 
             System.IO.Directory.CreateDirectory(root+dateString);
 
             //Load Microsoft Document
             Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application { Visible = false };
-            object templateFileName = "C:\\Temp\\File_Creation\\Workkeys_Accs\\LetterTemplate.docx";
+            object templateFileName = "C:\\File_Creation\\WorkKeys_Accs_File\\LetterTemplate.docx";
 
 
             //Replace info in document
@@ -882,7 +872,7 @@ namespace ST_8c4c03eac64347229462ca52238cc36e
             //FindAndReplace(wordApp, "{ApprovedAccomodations}", ApprovedAccomodations);
 
             //Save Document
-            aDoc.SaveAs2("C:\\Temp\\File_Creation\\Workkeys_Accs\\" + dateString+"\\" + studentFileName, WdSaveFormat.wdFormatPDF);
+            aDoc.SaveAs2("C:\\File_Creation\\WorkKeys_Accs_File\\" + dateString+"\\" + studentFileName, WdSaveFormat.wdFormatPDF);
             aDoc.Close(WdSaveOptions.wdDoNotSaveChanges);
             wordApp.Quit(WdSaveOptions.wdDoNotSaveChanges);
 
@@ -1023,7 +1013,7 @@ namespace ST_8c4c03eac64347229462ca52238cc36e
     <msb:CodeName>ST_43194452a0754030b5e3c2ca24df35c1</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_43194452a0754030b5e3c2ca24df35c1</msb:DisplayName>
-    <msb:ProjectId>{B6B16B71-2A82-480D-946D-1030AB1B87B0}</msb:ProjectId>
+    <msb:ProjectId>{333C24C8-6A0D-43EB-82A6-365069623652}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_43194452a0754030b5e3c2ca24df35c1.csproj" />
@@ -1145,7 +1135,7 @@ namespace ST_8c4c03eac64347229462ca52238cc36e.Properties {
               <BinaryItem
                 Name="ST_43194452a0754030b5e3c2ca24df35c1.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDALmdXl4AAAAAAAAAAOAAIiALATAAAC4AAAAIAAAAAAAA3k0A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJHJX14AAAAAAAAAAOAAIiALATAAAC4AAAAIAAAAAAAA3k0A
 AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACgAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIxNAABPAAAAAGAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1224,10 +1214,10 @@ ASkAcwCCAi4ACwBaAi4AEwBjAi4AGwCCAi4AIwCLAi4AKwC0Ai4AMwC0Ai4AOwC0Ai4AQwCLAi4A
 SwC6Ai4AUwC0Ai4AWwDRAkMAYwDdAEkAcwCCAoMAawDdAIkAuwA2A6kAuwA/A8EAewDdAMMAewDd
 AMMAgwB+A8MAiwDeA8MAkwDdAMkAuwA2A+MAewDdAOMAmwAIBOMAiwAPBOMAkwDdAOkAuwBIAwMB
 ewDdAAMBowA5BAMBqwCgBAkBuwBRAyMBewDdACMBiwABBSMBgwB+AyMBkwDdACkBuwBaA0MBewDd
-AEMBiwArBUMBmwAIBEMBkwDdAEkBuwA2A2MBewDdAGMBowBVBWMBqwC2BYABuwAbA4MBewDdAIMB
+AEMBmwAIBEMBiwArBUMBkwDdAEkBuwA2A2MBewDdAGMBowBVBWMBqwC2BYABuwAbA4MBewDdAIMB
 swAUBoMBiwAeBoMBkwDdAKMBewDdAKMBiwBIBqMBkwDdAMABuwAkA8MBewDdAMMBswByBsMBiwB8
 BsMBkwDdAOMBewDdAOMBiwCmBuMBqwDQBgACuwAtAwMCewDdAAMCiwAlBwMCqwBPByACuwA2AyMC
-ewDdACMCiwDeAyMCswClByMCkwDdAEACuwA2A0MCewDdAEMCswClB0MCiwABBUMCkwDdAIACuwA/
+ewDdACMCswClByMCiwDeAyMCkwDdAEACuwA2A0MCewDdAEMCswClB0MCiwABBUMCkwDdAIACuwA/
 A8ACuwA2A+ACuwBIAyADuwBRA2ADuwBaA4ADuwBaA8ADuwBjA+ADuwA2AyAEuwBjA2AEuwBsA6AE
 uwB1AwsAXwENAGEBDwBhAREAYQETAGEBFQBhARcAYQEZAGEBGwBhAR0AYQEfAGEBIQBhASMAYQEl
 AGEBJwBhASkAYQErAGEBLQBhAS8AYQExAGEBMwBhATUAYQE3AGEBOQBhATsAYQE9AGEBPwBhAUEA
@@ -1236,7 +1226,7 @@ AWEAYQFjAGEBZQBhAWcAYQFpAGEBawBhAW0AYQFvAGEBcQBhAXMAYQF1AGEBdwBhAXkAYQF7AGEB
 fQBhAX8AYQGBAGEBgwBhAYUAYQGHAGEBNACgAAQAAQAFAAMADgAEABEABgASAAoAAAAXCTQCAAAW
 BDkCAAAhDD4CAABsDUMCAACXAkcCAAC7A0MCAACWC0wCAADBCFECAACCA1YCAAC7A0MCAgAFAAMA
 AgAGAAUAAQAHAAUAAgAIAAcAAgARAAkAAQASAAkAAgAUAAsAAgAWAA0AAgAXAA8AAgAZABEAAgAb
-ABMAAQAcABMAAgAfABUABIAAAAEAAADHHKxVAAAAAAAAAQAAAAQAAAAAAAAAAAAAAMYA7QEAAAAA
+ABMAAQAcABMAAgAfABUABIAAAAEAAADIHAhtAAAAAAAAAQAAAAQAAAAAAAAAAAAAAMYA7QEAAAAA
 DwAAAAAAAAAAAAAAzwCTBwAAAAAEAAAAAAAAAAAAAADGAMQBAAAAAAQAAAAAAAAAAAAAAMYASQgA
 AAAADwAAAAAAAAAAAAAAzwCQAQAAAAAAAAAAAQAAAN8JAAAAAABTVF80MzE5NDQ1MmEwNzU0MDMw
 YjVlM2MyY2EyNGRmMzVjMQBfVnRibEdhcDJfMTIASW50MzIAX1Z0YmxHYXAyXzIAU2F2ZUFzMgBE
@@ -1306,11 +1296,11 @@ AGEAcwB0AE4AYQBtAGUAACNVAHMAZQByADoAOgBUAGUAcwB0AEEAZABkAHIAZQBzAHMAAB1VAHMA
 ZQByADoAOgBUAGUAcwB0AFQAaQBtAGUAAB9VAHMAZQByADoAOgBUAGUAcwB0AE4AYQBtAGUAMQAA
 H1UAcwBlAHIAOgA6AFQAZQBzAHQATgBhAG0AZQAyAAAfVQBzAGUAcgA6ADoAVABlAHMAdABOAGEA
 bQBlADMAAB9VAHMAZQByADoAOgBUAGUAcwB0AEQAYQB0AGUAMQAAH1UAcwBlAHIAOgA6AFQAZQBz
-AHQARABhAHQAZQAyAAAfVQBzAGUAcgA6ADoAVABlAHMAdABEAGEAdABlADMAAElDADoAXABUAGUA
-bQBwAFwARgBpAGwAZQBfAEMAcgBlAGEAdABpAG8AbgBcAFcAbwByAGsAawBlAHkAcwBfAEEAYwBj
-AHMAXAAAEU0ATQAtAGQAZAAtAHkAeQABSTAAMAAwADIAMAA5AEYARgAtADAAMAAwADAALQAwADAA
-MAAwAC0AQwAwADAAMAAtADAAMAAwADAAMAAwADAAMAAwADAANAA2AAFvQwA6AFwAVABlAG0AcABc
-AEYAaQBsAGUAXwBDAHIAZQBhAHQAaQBvAG4AXABXAG8AcgBrAGsAZQB5AHMAXwBBAGMAYwBzAFwA
+AHQARABhAHQAZQAyAAAfVQBzAGUAcgA6ADoAVABlAHMAdABEAGEAdABlADMAAElDADoAXABGAGkA
+bABlAF8AQwByAGUAYQB0AGkAbwBuAFwAVwBvAHIAawBLAGUAeQBzAF8AQQBjAGMAcwBfAEYAaQBs
+AGUAXAAAEU0ATQAtAGQAZAAtAHkAeQABSTAAMAAwADIAMAA5AEYARgAtADAAMAAwADAALQAwADAA
+MAAwAC0AQwAwADAAMAAtADAAMAAwADAAMAAwADAAMAAwADAANAA2AAFvQwA6AFwARgBpAGwAZQBf
+AEMAcgBlAGEAdABpAG8AbgBcAFcAbwByAGsASwBlAHkAcwBfAEEAYwBjAHMAXwBGAGkAbABlAFwA
 TABlAHQAdABlAHIAVABlAG0AcABsAGEAdABlAC4AZABvAGMAeAAAJXsAUwB0AHUAZABlAG4AdABG
 AGkAcgBzAHQATgBhAG0AZQB9AAAjewBTAHQAdQBkAGUAbgB0AEwAYQBzAHQATgBhAG0AZQB9AAAb
 ewBUAGUAcwB0AEEAZABkAHIAZQBzAHMAfQAAF3sAVABlAHMAdABOAGEAbQBlADEAfQAAF3sAVABl
@@ -1318,7 +1308,7 @@ AHMAdABOAGEAbQBlADIAfQAAF3sAVABlAHMAdABOAGEAbQBlADMAfQAAF3sAVABlAHMAdABEAGEA
 dABlADEAfQAAF3sAVABlAHMAdABEAGEAdABlADIAfQAAF3sAVABlAHMAdABEAGEAdABlADMAfQAA
 FXsAVABlAHMAdABUAGkAbQBlAH0AAANcAABxUwBUAF8AOABjADQAYwAwADMAZQBhAGMANgA0ADMA
 NAA3ADIAMgA5ADQANgAyAGMAYQA1ADIAMgAzADgAYwBjADMANgBlAC4AUAByAG8AcABlAHIAdABp
-AGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAAACHTsRS4o8bQobpM+kUS+rgAAQgAQEIAyAAAQUg
+AGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAAAAwJKS0aLMTSYMNRVeRLOzKAAQgAQEIAyAAAQUg
 AQEREQQgAQEOBSABARFZBSABARJpBCABAQYHIAIBEmkSaQUgAgEODiQHIA4ODg4ODg4OET0ODg4O
 HBIkHBwcHBwcHBwcHBwcHBwcHBwFIAASgI0FIAASgJEGIAESgJUcAyAAHAQAABE9BCABDg4FAAIO
 Dg4GAAESgKEOBwABEmkRgKUFAAEcEmkCBhwHAAQODg4ODg8HDRwcHBwcHBwcHBwcHBwHAAESaRGA
@@ -1361,14 +1351,14 @@ AAAAAAAAAAAAAAAAAADATQAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/
 JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAYAACA
 AAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAAWGAAABoEAAAA
 AAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9BO/+AAABAAAA
-AQCsVcccAAABAKxVxxw/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEAVgBhAHIARgBp
+AQAIbcgcAAABAAhtyBw/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEAVgBhAHIARgBp
 AGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAAAAAAsAR6AwAA
 AQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAAMAAwADAANABiADAAAAAa
 AAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4AeQBOAGEAbQBlAAAA
 AAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAVABfADgAYwA0
 AGMAMAAzAGUAYQBjADYANAAzADQANwAyADIAOQA0ADYAMgBjAGEANQAyADIAMwA4AGMAYwAzADYA
-ZQAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA3ADMANgA3AC4AMgAx
-ADkAMwAyAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADQAMwAxADkA
+ZQAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA3ADMANgA4AC4AMgA3
+ADkAMQAyAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADQAMwAxADkA
 NAA0ADUAMgBhADAANwA1ADQAMAAzADAAYgA1AGUAMwBjADIAYwBhADIANABkAGYAMwA1AGMAMQAu
 AGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkA
 ZwBoAHQAIABAACAAIAAyADAAMQA4AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBr
@@ -1377,8 +1367,8 @@ NAAzADEAOQA0ADQANQAyAGEAMAA3ADUANAAwADMAMABiADUAZQAzAGMAMgBjAGEAMgA0AGQAZgAz
 ADUAYwAxAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAVABfADgA
 YwA0AGMAMAAzAGUAYQBjADYANAAzADQANwAyADIAOQA0ADYAMgBjAGEANQAyADIAMwA4AGMAYwAz
 ADYAZQAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANwAzADYA
-NwAuADIAMQA5ADMAMgAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAA
-ADEALgAwAC4ANwAzADYANwAuADIAMQA5ADMAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+OAAuADIANwA5ADEAMgAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAA
+ADEALgAwAC4ANwAzADYAOAAuADIANwA5ADEAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1948,8 +1938,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Load GeneralFileCreation\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
-                  connectionManagerRefId="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
+                  connectionManagerID="{23CF77F1-5550-4EFB-8186-9638AE49E094}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2213,7 +2203,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CE1F2AC4-ED81-497D-9CD4-12CA9F23AC37}"
+          SQLTask:Connection="{23CF77F1-5550-4EFB-8186-9638AE49E094}"
           SQLTask:SqlStatementSource="select distinct&#xA;      lasid&#xA;     ,g.FirstName&#xA;     ,g.LastName&#xA;     ,concat('WorkKeys Testing 2020 - ',st.stIndex,'.pdf') as StudentFileName&#xA;     ,testAddress&#xA;     ,testName1&#xA;     ,testName2&#xA;     ,testName3&#xA;     ,testDate1&#xA;     ,testDate2&#xA;     ,testDate3&#xA;     ,testTime&#xA;from generalfilecreation g&#xA;inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID"
           SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -2409,13 +2399,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,42"
-          Id="Package\Create Map File\Flat File Destination"
-          TopLeft="183,189" />
-        <NodeLayout
           Size="150,42"
           Id="Package\Create Map File\OLE DB Source"
           TopLeft="209.5,40.5" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Create Map File\Flat File Destination"
+          TopLeft="183,189" />
         <EdgeLayout
           Id="Package\Create Map File.Paths[OLE DB Source Output]"
           TopLeft="284.5,82.5">
@@ -2467,13 +2457,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Load GeneralFileCreation\Flat File Source"
-          TopLeft="122.5,28.5" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Load GeneralFileCreation\OLE DB Destination"
           TopLeft="122,168" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load GeneralFileCreation\Flat File Source"
+          TopLeft="122.5,28.5" />
         <EdgeLayout
           Id="Package\Load GeneralFileCreation.Paths[Flat File Source Output]"
           TopLeft="198,70.5">
