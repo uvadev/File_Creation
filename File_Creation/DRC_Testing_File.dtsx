@@ -1,26 +1,26 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="11/1/2018 10:50:05 AM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-P7ICBMF"
   DTS:CreatorName="UVIEW\kshelton"
-  DTS:DTSID="{F19AC73A-EBA0-4DBA-B95E-3EC56BA43EA3}"
+  DTS:DTSID="{6A206101-7E98-4CC0-9E73-6CA5FD79087D}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.71"
+  DTS:LastModifiedProductVersion="15.0.1900.80"
   DTS:LocaleID="1033"
-  DTS:ObjectName="DRCLoginFile"
+  DTS:ObjectName="DRC_Login_File"
   DTS:PackageType="5"
-  DTS:VersionBuild="129"
-  DTS:VersionGUID="{B4C48BA3-2D28-4B01-9B78-8956ADA36546}">
+  DTS:VersionBuild="133"
+  DTS:VersionGUID="{21EF49B3-8AE9-4B98-AE8B-C979A0651708}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DRCTestingFile]"
+      DTS:refId="Package.ConnectionManagers[DataFile]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{0BAA207E-2B26-48D8-A6C7-D03AF638C34E}"
-      DTS:ObjectName="DRCTestingFile">
+      DTS:DTSID="{344B4030-11FB-4356-B965-EB3BC377B2A6}"
+      DTS:ObjectName="DataFile">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Temp\DRCTestingFiles\DRCTestingFile.csv">
+          DTS:ConnectionString="C:\File_Creation\DRC_Testing_File\DataFile.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Administration Name"
-              DTS:DTSID="{5DD20F30-B5EB-4651-AE0B-3C3F9A1D7C64}"
+              DTS:DTSID="{F11A10CD-C4B3-454A-A453-8FD0FA0F34C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="District Code"
-              DTS:DTSID="{8FEAE2D2-AC99-4DB1-BC9E-F36EECB4B962}"
+              DTS:DTSID="{A57CDF54-D6AE-4604-8B18-0CBEEAFA7DE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="District Name"
-              DTS:DTSID="{B8C2E881-B847-4F3A-AA9D-C850C0F58878}"
+              DTS:DTSID="{8B17B050-7ADF-4200-A04D-E7AFF0675139}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="School Code"
-              DTS:DTSID="{BBBBCB44-C46B-4B4A-AAFC-6E32AE02C44F}"
+              DTS:DTSID="{D067DAD3-086A-4E77-B800-E3615E933779}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="School Name"
-              DTS:DTSID="{10E6AE05-9E29-438E-BEA7-8413393595FC}"
+              DTS:DTSID="{DC4C65C1-6E10-43EE-8ED8-641182B3BFA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Session Name"
-              DTS:DTSID="{79509964-07FD-4F97-B49E-1CB558BA959E}"
+              DTS:DTSID="{4AF7AF67-0892-4FB1-8F1F-CA8FC228F68D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Content Area"
-              DTS:DTSID="{249ADCC0-0741-4189-BAE6-CBDDE3FFB90E}"
+              DTS:DTSID="{336A6EB4-2EF7-48A0-A1A6-96F313E249B4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Assessment Name"
-              DTS:DTSID="{573AEFC3-D5E4-4755-BD25-C09FF803EF01}"
+              DTS:DTSID="{6CCCA4A1-06EC-4B14-AEE0-FA57B37B7FC6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Begin Date"
-              DTS:DTSID="{C16CF684-9C0E-49C3-B5BC-0849864CBFD8}"
+              DTS:DTSID="{5BE248C3-99A0-45BE-9F82-1C35551733FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="End Date"
-              DTS:DTSID="{596F5EA1-A3DB-4936-BED4-7D132032D815}"
+              DTS:DTSID="{F944ED4E-B646-409F-9711-FAED4CE65452}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Student Last Name"
-              DTS:DTSID="{382DF718-7345-4267-A115-995E408415FD}"
+              DTS:DTSID="{883EC5BC-0941-4BD5-A012-D6A52B1C60E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Student First Name"
-              DTS:DTSID="{EA733DCC-1C87-4DEC-AC89-CC668879C669}"
+              DTS:DTSID="{678033FF-6586-4E22-A765-755111A32895}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LASID"
-              DTS:DTSID="{8EA5985B-3FD6-44B2-864C-B9478AC10C69}"
+              DTS:DTSID="{BAF8719A-46F5-4EBE-A715-CF86F468F374}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Grade"
-              DTS:DTSID="{7E370667-1752-4E26-AD02-8ADB77A9A1A9}"
+              DTS:DTSID="{528B054E-01E2-449F-995D-E67F01AD367B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +165,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="User Name"
-              DTS:DTSID="{A687C600-CBE5-4222-9C25-ED3367D66EF5}"
+              DTS:DTSID="{200B988F-EFE5-4778-8B84-876450C5C0A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +174,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Password"
-              DTS:DTSID="{FE50EEB7-42B4-4DD5-AD1A-5045756DF7FB}"
+              DTS:DTSID="{725A0D3E-4E3E-4B33-90BC-1CF4AC1AB9F4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -183,7 +183,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Status"
-              DTS:DTSID="{5A41B594-270F-4814-BE29-A99EB068C43B}"
+              DTS:DTSID="{9CE2E365-BE2B-4B53-8857-F9407E8E7B86}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +192,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date Started"
-              DTS:DTSID="{AD82887E-E013-4C67-A5AC-8C2F70E2C0F6}"
+              DTS:DTSID="{C771AC3F-A96B-4F99-BACC-E075E70755C4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -201,7 +201,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date Completed"
-              DTS:DTSID="{0DB32F43-AF62-4EB9-A21C-9DDC3DE15B66}"
+              DTS:DTSID="{6930EB61-81B7-4250-A184-286C586DE56F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,7 +210,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Accommodations"
-              DTS:DTSID="{1850DB7C-1F0E-4937-90B5-5E99ED9641B7}"
+              DTS:DTSID="{143F02B5-3CEC-446A-9D9B-B19B5C6C1F33}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -229,7 +229,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Temp\DRCTestingFiles\map.csv">
+          DTS:ConnectionString="C:\File_Creation\DRC_Testing_File\map.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -238,7 +238,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="studentIndex"
-              DTS:DTSID="{E6ADFEF8-F794-4C6F-BF1A-485C0337C23F}"
+              DTS:DTSID="{A14A3D24-4471-4766-AFDC-EB5AC57DF705}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -247,20 +247,10 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentFileName"
-              DTS:DTSID="{B294609A-98C4-4A1D-AED0-0BEA0BC10500}"
+              DTS:DTSID="{8A2A1AF2-774F-4679-B82B-19F3A60F1A25}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[UVACONTENT.UNIVERSITYVIEW]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{54A2C3E3-19CD-4A2A-A4AB-C1F5BF5FB842}"
-      DTS:ObjectName="UVACONTENT.UNIVERSITYVIEW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=UVACONTENT;Initial Catalog=UNIVERSITYVIEW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -382,13 +372,13 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Create Map File 1"
+      DTS:refId="Package\Create Map File"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{82F7DD42-C736-48B9-A607-66526186A080}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Create Map File 1"
+      DTS:ObjectName="Create Map File"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -396,7 +386,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Create Map File 1\Flat File Destination"
+              refId="Package\Create Map File\Flat File Destination"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
@@ -420,43 +410,43 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Create Map File 1\Flat File Destination.Connections[FlatFileConnection]"
+                  refId="Package\Create Map File\Flat File Destination.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[MapFile]"
                   connectionManagerRefId="Package.ConnectionManagers[MapFile]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Create Map File 1\Flat File Destination.Inputs[Flat File Destination Input]"
+                  refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Create Map File 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[StudentIndex]"
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].Columns[StudentIndex]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="StudentIndex"
-                      externalMetadataColumnId="Package\Create Map File 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[studentIndex]"
-                      lineageId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentIndex]" />
+                      externalMetadataColumnId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[studentIndex]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentIndex]" />
                     <inputColumn
-                      refId="Package\Create Map File 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[StudentFileName]"
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].Columns[StudentFileName]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="67"
                       cachedName="StudentFileName"
-                      externalMetadataColumnId="Package\Create Map File 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StudentFileName]"
-                      lineageId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]" />
+                      externalMetadataColumnId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StudentFileName]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Create Map File 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[studentIndex]"
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[studentIndex]"
                       dataType="wstr"
                       length="4000"
                       name="studentIndex" />
                     <externalMetadataColumn
-                      refId="Package\Create Map File 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StudentFileName]"
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StudentFileName]"
                       codePage="65001"
                       dataType="str"
                       length="181"
@@ -466,7 +456,7 @@
               </inputs>
             </component>
             <component
-              refId="Package\Create Map File 1\OLE DB Source"
+              refId="Package\Create Map File\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
@@ -523,7 +513,7 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = d.LASID</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Create Map File 1\OLE DB Source.Connections[OleDbConnection]"
+                  refId="Package\Create Map File\OLE DB Source.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
                   connectionManagerRefId="Package.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
                   description="The OLE DB runtime connection used to access the database."
@@ -531,42 +521,42 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = d.LASID</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentIndex]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentIndex]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentIndex]"
+                      externalMetadataColumnId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentIndex]"
                       length="50"
-                      lineageId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentIndex]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentIndex]"
                       name="StudentIndex"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentFileName]"
+                      externalMetadataColumnId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentFileName]"
                       length="67"
-                      lineageId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]"
                       name="StudentFileName"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentIndex]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentIndex]"
                       codePage="65001"
                       dataType="str"
                       length="9"
                       name="StudentIndex" />
                     <externalMetadataColumn
-                      refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentFileName]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentFileName]"
                       codePage="65001"
                       dataType="str"
                       length="48"
@@ -574,34 +564,34 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = d.LASID</property>
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentIndex]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentIndex]"
                       codePage="65001"
                       dataType="str"
                       length="9"
-                      lineageId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentIndex]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentIndex]"
                       name="StudentIndex" />
                     <outputColumn
-                      refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentFileName]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentFileName]"
                       codePage="65001"
                       dataType="str"
                       length="48"
-                      lineageId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentFileName]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentFileName]"
                       name="StudentFileName" />
                     <outputColumn
-                      refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -612,22 +602,22 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = d.LASID</property>
           </components>
           <paths>
             <path
-              refId="Package\Create Map File 1.Paths[OLE DB Source Output]"
-              endId="Package\Create Map File 1\Flat File Destination.Inputs[Flat File Destination Input]"
+              refId="Package\Create Map File.Paths[OLE DB Source Output]"
+              endId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input]"
               name="OLE DB Source Output"
-              startId="Package\Create Map File 1\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Foreach Student Container 1"
+      DTS:refId="Package\Foreach Student Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
       DTS:DTSID="{09C45347-34BF-4237-A713-19EB6741E846}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Student Container 1">
+      DTS:ObjectName="Foreach Student Container">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachADOEnumerator"
         DTS:DTSID="{DDCE6DCD-7BBB-4116-BC3E-72D08B84A711}"
@@ -641,7 +631,7 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = d.LASID</property>
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Foreach Student Container 1\Script Task"
+          DTS:refId="Package\Foreach Student Container\Script Task"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
           DTS:DTSID="{3FA85C07-05C3-4FED-8708-D503F642F537}"
@@ -657,6 +647,36 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = d.LASID</property>
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadOnlyVariables="User::GradeLevel,User::LASID,User::StudentFileName,User::StudentFirstName,User::StudentIndex,User::StudentLastName">
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_8c4c03eac64347229462ca52238cc36e")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_8c4c03eac64347229462ca52238cc36e")]
+[assembly: AssemblyCopyright("Copyright @  2018")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -776,35 +796,6 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = d.LASID</property>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8c4c03eac64347229462ca52238cc36e.Properties.Settings.get_Default():ST_8c4c03eac64347229462ca52238cc36e.Properties.Sett" +
-    "ings")]
-
-namespace ST_8c4c03eac64347229462ca52238cc36e.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ST_cf515bbd10c34bf494c01e81f795546f.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1083,35 +1074,34 @@ namespace ST_8c4c03eac64347229462ca52238cc36e
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_8c4c03eac64347229462ca52238cc36e")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_8c4c03eac64347229462ca52238cc36e")]
-[assembly: AssemblyCopyright("Copyright @  2018")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8c4c03eac64347229462ca52238cc36e.Properties.Settings.get_Default():ST_8c4c03eac64347229462ca52238cc36e.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_8c4c03eac64347229462ca52238cc36e.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -1656,7 +1646,7 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">true</property>
+                  name="RetainNulls">false</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -1665,8 +1655,8 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Load DRCTestingFile\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DRCTestingFile]"
-                  connectionManagerRefId="Package.ConnectionManagers[DRCTestingFile]"
+                  connectionManagerID="Package.ConnectionManagers[DataFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[DataFile]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1835,7 +1825,7 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load DRCTestingFile\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Assessment Name]"
-                      length="100"
+                      length="50"
                       lineageId="Package\Load DRCTestingFile\Flat File Source.Outputs[Flat File Source Output].Columns[Assessment Name]"
                       name="Assessment Name"
                       truncationRowDisposition="FailComponent">
@@ -2246,7 +2236,7 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load DRCTestingFile\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="text"
                       description="Flat File Source Error Output Column"
                       lineageId="Package\Load DRCTestingFile\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
@@ -2440,7 +2430,7 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
                       refId="Package\Load DRCTestingFile\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Assessment Name]"
                       cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="50"
                       cachedName="Assessment Name"
                       externalMetadataColumnId="Package\Load DRCTestingFile\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssessmentName]"
                       lineageId="Package\Load DRCTestingFile\Flat File Source.Outputs[Flat File Source Output].Columns[Assessment Name]" />
@@ -2663,13 +2653,13 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Query Variables 1"
+      DTS:refId="Package\Query Variables"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{51C46D88-1BF5-41B3-87B4-EDB658EB0D65}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Query Variables 1"
+      DTS:ObjectName="Query Variables"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -2705,10 +2695,10 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
       DTS:CreationName=""
       DTS:DTSID="{26B7562B-EAF2-44ED-99E3-62152507E492}"
-      DTS:From="Package\Foreach Student Container 1"
+      DTS:From="Package\Foreach Student Container"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 10"
-      DTS:To="Package\Create Map File 1" />
+      DTS:To="Package\Create Map File" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
       DTS:CreationName=""
@@ -2721,10 +2711,10 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
       DTS:CreationName=""
       DTS:DTSID="{756A095C-CE37-4A18-AE74-F5711150AC6B}"
-      DTS:From="Package\Query Variables 1"
+      DTS:From="Package\Query Variables"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 8"
-      DTS:To="Package\Foreach Student Container 1" />
+      DTS:To="Package\Foreach Student Container" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
       DTS:CreationName=""
@@ -2732,7 +2722,7 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:From="Package\Load DRCTestingFile"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 9"
-      DTS:To="Package\Query Variables 1" />
+      DTS:To="Package\Query Variables" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -2747,27 +2737,27 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="161,42"
-          Id="Package\Create Map File 1"
-          TopLeft="238.333334848285,251.600003207922" />
+          Size="157,42"
+          Id="Package\Create Map File"
+          TopLeft="249.333334848285,251.600003207922" />
         <NodeLayout
           Size="131,42"
-          Id="Package\Foreach Student Container 1\Script Task"
+          Id="Package\Foreach Student Container\Script Task"
           TopLeft="14.4444444444445,7.7777777777778" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="180,62"
-          Size="180,105"
-          Id="Package\Foreach Student Container 1"
+          PanelSize="186,55"
+          Size="186,98"
+          Id="Package\Foreach Student Container"
           TopLeft="233.333334848285,106.958589066508" />
         <NodeLayout
           Size="176,43"
           Id="Package\Load DRCTestingFile"
           TopLeft="501.333334848285,43.6000032079219" />
         <NodeLayout
-          Size="162,42"
-          Id="Package\Query Variables 1"
+          Size="158,42"
+          Id="Package\Query Variables"
           TopLeft="515.111112626065,131.736366844286" />
         <NodeLayout
           Size="195,42"
@@ -2775,18 +2765,18 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
           TopLeft="223.333334848285,42.6000032079219" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="321.083334848285,211.958589066508">
+          TopLeft="327.083334848285,204.958589066508">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39.641414141414"
+              EndConnector="0,46.641414141414"
               Start="0,0"
-              End="0,32.141414141414">
+              End="0,39.141414141414">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.141414141414" />
+                    End="0,39.141414141414" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2819,18 +2809,18 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="515.111112626065,156.097477955397">
+          TopLeft="515.111112626065,154.347477955397">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-101.77777777778,0"
+              EndConnector="-95.77777777778,0"
               Start="0,0"
-              End="-94.27777777778,0">
+              End="-88.27777777778,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-94.27777777778,0" />
+                    End="-88.27777777778,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2841,18 +2831,18 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="592.722223737175,86.2666698745886">
+          TopLeft="591.722223737175,86.6000032079219">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.4696969696975"
+              EndConnector="0,45.1363636363641"
               Start="0,0"
-              End="0,37.9696969696975">
+              End="0,37.6363636363641">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.9696969696975" />
+                    End="0,37.6363636363641" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2865,20 +2855,20 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Create Map File 1">
+    design-time-name="Package\Create Map File">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
-          Id="Package\Create Map File 1\OLE DB Source"
+          Id="Package\Create Map File\OLE DB Source"
           TopLeft="466,37.3333333333333" />
         <NodeLayout
           Size="172,42"
-          Id="Package\Create Map File 1\Flat File Destination"
+          Id="Package\Create Map File\Flat File Destination"
           TopLeft="432,174" />
         <EdgeLayout
-          Id="Package\Create Map File 1.Paths[OLE DB Source Output]"
+          Id="Package\Create Map File.Paths[OLE DB Source Output]"
           TopLeft="541,79.3333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2915,7 +2905,7 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Create Map File 1\OLE DB Source">
+    design-time-name="Package\Create Map File\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2928,39 +2918,39 @@ AAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152,43"
-          Id="Package\Load DRCTestingFile\Flat File Source"
-          TopLeft="32,40" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Load DRCTestingFile\OLE DB Destination"
           TopLeft="12.6944444340964,138.833333372076" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load DRCTestingFile\Flat File Source"
+          TopLeft="34.5,33.5" />
         <EdgeLayout
           Id="Package\Load DRCTestingFile.Paths[Flat File Source Output]"
-          TopLeft="108,82.6666666666667">
+          TopLeft="112.5,75.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9.97222223257025,56.1666667054097"
+              EndConnector="-14.3055555659036,63.333333372076"
               Start="0,0"
-              End="-9.97222223257025,48.6666667054097">
+              End="-14.3055555659036,55.833333372076">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.0833333527048" />
+                    End="0,27.666666686038" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.0833333527048"
-                    Point2="0,28.0833333527048"
-                    Point3="-4,28.0833333527048" />
+                    Point1="0,27.666666686038"
+                    Point2="0,31.666666686038"
+                    Point3="-4,31.666666686038" />
                   <mssgle:LineSegment
-                    End="-5.97222223257025,28.0833333527048" />
+                    End="-10.3055555659036,31.666666686038" />
                   <mssgle:CubicBezierSegment
-                    Point1="-5.97222223257025,28.0833333527048"
-                    Point2="-9.97222223257025,28.0833333527048"
-                    Point3="-9.97222223257025,32.0833333527048" />
+                    Point1="-10.3055555659036,31.666666686038"
+                    Point2="-14.3055555659036,31.666666686038"
+                    Point3="-14.3055555659036,35.666666686038" />
                   <mssgle:LineSegment
-                    End="-9.97222223257025,48.6666667054097" />
+                    End="-14.3055555659036,55.833333372076" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

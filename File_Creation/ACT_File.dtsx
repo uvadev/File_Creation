@@ -1,18 +1,18 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/13/2020 3:08:13 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-0FGSJI4"
   DTS:CreatorName="UVIEW\kshelton"
-  DTS:DTSID="{5679020A-AA20-4E2C-BF13-3C94E02FFE22}"
+  DTS:DTSID="{8C1F251D-11FC-49B7-97C5-5D59B69703D7}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.71"
+  DTS:LastModifiedProductVersion="15.0.1900.80"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="ACT_File"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{479E7C14-76D4-47D4-A9C9-455EA8166589}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{78479C1E-4F1D-4747-AE2E-37FF865C6F7D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Temp\ACT\DataFile.csv">
+          DTS:ConnectionString="C:\File_Creation\ACT_File\DataFile.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LASID"
-              DTS:DTSID="{AB757905-BB34-482A-BAD8-9F452B65272A}"
+              DTS:DTSID="{01DB8B95-E59A-4833-8C13-947C459C3466}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentFirstName"
-              DTS:DTSID="{4881EEFB-329E-4BC3-89A4-7791E1994E32}"
+              DTS:DTSID="{2B812D5C-E8DA-438C-82C3-CCE9FF02FD4F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentLastName"
-              DTS:DTSID="{B2CF6E99-2F9B-489F-97DA-EF9EA87704A0}"
+              DTS:DTSID="{1620AFEF-D0DC-4B63-80C3-32752AFF89DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestAddress"
-              DTS:DTSID="{9EC35AE5-999B-42BC-91B4-0841A7441A8F}"
+              DTS:DTSID="{4B087094-611C-44DF-BDB8-A551A0143F07}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestCity"
-              DTS:DTSID="{4458F640-E837-4BF0-B10F-7A0B69C24D09}"
+              DTS:DTSID="{94356CD8-90DF-4C47-BA42-DB9838328D28}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -94,7 +94,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Temp\ACT\map.csv">
+          DTS:ConnectionString="C:\File_Creation\ACT_File\map.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="stIndex"
-              DTS:DTSID="{2985A0BB-E5A4-43E7-9205-F8390FF5C738}"
+              DTS:DTSID="{20122FBF-C157-4795-A0C0-993F2497120E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,20 +112,10 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="studentfilename"
-              DTS:DTSID="{B76F64C4-DD15-4855-81B4-67FC750D0AEE}"
+              DTS:DTSID="{31860D65-548F-45A1-BE3C-9C52DB00C044}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{19F58F30-EEBA-44A6-8AE5-C98048FF1472}"
-      DTS:ObjectName="uvacontent.UNIVERSITYVIEW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=uvacontent;Initial Catalog=UNIVERSITYVIEW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -301,21 +291,21 @@
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].Columns[stIndex]"
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].Columns[stindex]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="9"
-                      cachedName="stIndex"
+                      cachedName="stindex"
                       externalMetadataColumnId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[stIndex]"
-                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stIndex]" />
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stindex]" />
                     <inputColumn
-                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].Columns[studentfilename]"
+                      refId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].Columns[StudentFileName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="studentfilename"
+                      cachedLength="32"
+                      cachedName="StudentFileName"
                       externalMetadataColumnId="Package\Create Map File\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[studentfilename]"
-                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[studentfilename]" />
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -351,7 +341,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset"></property>
+                  name="OpenRowset">[dbo].[GeneralFileCreation]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -360,10 +350,14 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select 
-	st.stIndex
-                  ,concat('ACT Testing 2020 - ',st.stIndex,'.pdf') as studentfilename
-from generalFileCreation g
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select distinct
+      stindex
+     ,concat('ACT Testing 2020 - ',st.stIndex,'.pdf') as StudentFileName
+--     ,testAddress
+     --,testTime
+     --,testDate
+     --,testCity
+from generalfilecreation g
 inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID</property>
                 <property
                   dataType="System.String"
@@ -390,8 +384,8 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID</property>
               <connections>
                 <connection
                   refId="Package\Create Map File\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
-                  connectionManagerRefId="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
+                  connectionManagerID="{23CF77F1-5550-4EFB-8186-9638AE49E094}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -401,42 +395,42 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID</property>
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stIndex]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stindex]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stIndex]"
+                      externalMetadataColumnId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stindex]"
                       length="9"
-                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stIndex]"
-                      name="stIndex"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[stindex]"
+                      name="stindex"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[studentfilename]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[studentfilename]"
-                      length="50"
-                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[studentfilename]"
-                      name="studentfilename"
+                      externalMetadataColumnId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentFileName]"
+                      length="32"
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFileName]"
+                      name="StudentFileName"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stIndex]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stindex]"
                       codePage="1252"
                       dataType="str"
                       length="9"
-                      name="stIndex" />
+                      name="stindex" />
                     <externalMetadataColumn
-                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[studentfilename]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentFileName]"
                       codePage="1252"
                       dataType="str"
                       length="32"
-                      name="studentfilename" />
+                      name="StudentFileName" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -445,19 +439,19 @@ inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID</property>
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[stIndex]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[stindex]"
                       codePage="1252"
                       dataType="str"
                       length="9"
-                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[stIndex]"
-                      name="stIndex" />
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[stindex]"
+                      name="stindex" />
                     <outputColumn
-                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[studentfilename]"
+                      refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentFileName]"
                       codePage="1252"
                       dataType="str"
                       length="32"
-                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[studentfilename]"
-                      name="studentfilename" />
+                      lineageId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentFileName]"
+                      name="StudentFileName" />
                     <outputColumn
                       refId="Package\Create Map File\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -1559,8 +1553,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Load GeneralFileCreation\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
-                  connectionManagerRefId="Package.ConnectionManagers[uvacontent.UNIVERSITYVIEW]"
+                  connectionManagerID="{23CF77F1-5550-4EFB-8186-9638AE49E094}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[uvasql.UNIVERSITYVIEW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1688,17 +1682,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       length="50"
                       name="TestCity" />
                     <externalMetadataColumn
-                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="TestDate" />
-                    <externalMetadataColumn
                       refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestTime]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="TestTime" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate1" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate2" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate3" />
+                    <externalMetadataColumn
+                      refId="Package\Load GeneralFileCreation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestDate4" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1750,7 +1762,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{19F58F30-EEBA-44A6-8AE5-C98048FF1472}"
+          SQLTask:Connection="{23CF77F1-5550-4EFB-8186-9638AE49E094}"
           SQLTask:SqlStatementSource="select distinct&#xA;      lasid&#xA;     ,g.FirstName&#xA;     ,g.LastName&#xA;     ,concat('ACT Testing 2020 - ',st.stIndex,'.pdf') as StudentFileName&#xA;     ,testAddress&#xA;     --,testTime&#xA;     --,testDate&#xA;     --,testCity&#xA;from generalfilecreation g&#xA;inner join JCampus.dbo.stu0001 st on st.ststateid = g.LASID"
           SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -1771,7 +1783,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{19F58F30-EEBA-44A6-8AE5-C98048FF1472}"
+          SQLTask:Connection="{23CF77F1-5550-4EFB-8186-9638AE49E094}"
           SQLTask:SqlStatementSource="Truncate Table GeneralFileCreation" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1946,22 +1958,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,42"
-          Id="Package\Create Map File\Flat File Destination"
-          TopLeft="183,189" />
-        <NodeLayout
-          Size="150,42"
+          Size="157,42"
           Id="Package\Create Map File\OLE DB Source"
           TopLeft="209.5,40.5" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Create Map File\Flat File Destination"
+          TopLeft="183,189" />
         <EdgeLayout
           Id="Package\Create Map File.Paths[OLE DB Source Output]"
-          TopLeft="284.5,82.5">
+          TopLeft="288,82.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15.5,106.5"
+              EndConnector="-17,106.5"
               Start="0,0"
-              End="-15.5,99">
+              End="-17,99">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1972,13 +1984,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point2="0,53.25"
                     Point3="-4,53.25" />
                   <mssgle:LineSegment
-                    End="-11.5,53.25" />
+                    End="-13,53.25" />
                   <mssgle:CubicBezierSegment
-                    Point1="-11.5,53.25"
-                    Point2="-15.5,53.25"
-                    Point3="-15.5,57.25" />
+                    Point1="-13,53.25"
+                    Point2="-17,53.25"
+                    Point3="-17,57.25" />
                   <mssgle:LineSegment
-                    End="-15.5,99" />
+                    End="-17,99" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1995,6 +2007,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
